@@ -13,6 +13,10 @@
 		9E2C25551B9E4B3B00F50E99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E2C25541B9E4B3B00F50E99 /* Images.xcassets */; };
 		9E2C25581B9E4B3B00F50E99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E2C25561B9E4B3B00F50E99 /* LaunchScreen.xib */; };
 		9E2C25641B9E4B3B00F50E99 /* LoteriaCEDACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2C25631B9E4B3B00F50E99 /* LoteriaCEDACTests.swift */; };
+		9EE8E3441BA773CD00BAC95C /* maestra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE8E3401BA773CD00BAC95C /* maestra.jpg */; };
+		9EE8E3451BA773CD00BAC95C /* tiza.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE8E3411BA773CD00BAC95C /* tiza.png */; };
+		9EE8E3461BA773CD00BAC95C /* llave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE8E3421BA773CD00BAC95C /* llave.jpg */; };
+		9EE8E3471BA773CD00BAC95C /* gato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE8E3431BA773CD00BAC95C /* gato.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		9E2C255D1B9E4B3B00F50E99 /* LoteriaCEDACTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoteriaCEDACTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2C25621B9E4B3B00F50E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E2C25631B9E4B3B00F50E99 /* LoteriaCEDACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoteriaCEDACTests.swift; sourceTree = "<group>"; };
+		9EE8E3401BA773CD00BAC95C /* maestra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maestra.jpg; sourceTree = "<group>"; };
+		9EE8E3411BA773CD00BAC95C /* tiza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiza.png; sourceTree = "<group>"; };
+		9EE8E3421BA773CD00BAC95C /* llave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = llave.jpg; sourceTree = "<group>"; };
+		9EE8E3431BA773CD00BAC95C /* gato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gato.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,10 @@
 		9E2C254A1B9E4B3B00F50E99 /* LoteriaCEDAC */ = {
 			isa = PBXGroup;
 			children = (
+				9EE8E3401BA773CD00BAC95C /* maestra.jpg */,
+				9EE8E3411BA773CD00BAC95C /* tiza.png */,
+				9EE8E3421BA773CD00BAC95C /* llave.jpg */,
+				9EE8E3431BA773CD00BAC95C /* gato.jpg */,
 				9E2C254D1B9E4B3B00F50E99 /* AppDelegate.swift */,
 				9E2C254F1B9E4B3B00F50E99 /* ViewController.swift */,
 				9E2C25511B9E4B3B00F50E99 /* Main.storyboard */,
@@ -193,8 +205,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E2C25531B9E4B3B00F50E99 /* Main.storyboard in Resources */,
+				9EE8E3451BA773CD00BAC95C /* tiza.png in Resources */,
 				9E2C25581B9E4B3B00F50E99 /* LaunchScreen.xib in Resources */,
 				9E2C25551B9E4B3B00F50E99 /* Images.xcassets in Resources */,
+				9EE8E3471BA773CD00BAC95C /* gato.jpg in Resources */,
+				9EE8E3461BA773CD00BAC95C /* llave.jpg in Resources */,
+				9EE8E3441BA773CD00BAC95C /* maestra.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +427,7 @@
 				9E2C25691B9E4B3B00F50E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E2C256A1B9E4B3B00F50E99 /* Build configuration list for PBXNativeTarget "LoteriaCEDACTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +436,7 @@
 				9E2C256C1B9E4B3B00F50E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
