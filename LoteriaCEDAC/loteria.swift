@@ -12,9 +12,8 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
 
     
     //vars
-    var flipped = [Bool] (count: 18, repeatedValue: false)
-    var cards = ["🐂", "🐎","🐯","🐤","👉","👌","🎁","🎂", "🎃", "🍆","🍕","🍻","🍳","🐸","🐬","🐠","🐝","💦",
-                 "🐂", "🐎","🐯","🐤","👉","👌","🎁","🎂", "🎃", "🍆","🍕","🍻","🍳","🐸","🐬","🐠","🐝","💦"]
+    var flipped = [Bool] (count: 9, repeatedValue: false)
+    var cards = ["🐂", "🐎","🐯","🐤","👉","👌","🎁","🎂", "🎃"]
     
     var isFirstPairOpen = false
     var firstPairIndex = 0
@@ -35,7 +34,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     //Collection methods
     //items in section
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 18
+        return 9
     }
     
     //number of sections
