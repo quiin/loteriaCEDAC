@@ -35,15 +35,6 @@
                                     <segue destination="zWA-Yb-nN0" kind="show" id="afX-yH-eGt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjC-7O-BuZ">
-                                <rect key="frame" x="197" y="383" width="47" height="30"/>
-                                <state key="normal" title="Nivel 1">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="zWA-Yb-nN0" kind="show" id="ZhJ-oq-0gH"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0he-EY-d9B">
                                 <rect key="frame" x="254" y="179" width="92" height="30"/>
                                 <state key="normal" title="Instrucciones">
@@ -63,6 +54,15 @@
                                 </state>
                                 <connections>
                                     <segue destination="9yM-Ef-QHD" kind="show" id="5FM-nM-q3D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjC-7O-BuZ">
+                                <rect key="frame" x="210" y="375" width="47" height="30"/>
+                                <state key="normal" title="Nivel 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zWA-Yb-nN0" kind="show" id="ZhJ-oq-0gH"/>
                                 </connections>
                             </button>
                         </subviews>
