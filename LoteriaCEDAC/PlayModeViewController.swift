@@ -1,24 +1,38 @@
 //
-//  MultiPlayerPlayer_ViewController.swift
+//  PlayModeViewController.swift
 //  LoteriaCEDAC
 //
-//  Created by Diego Monroy Fraustro on 09/10/15.
+//  Created by Carlos Alejandro Reyna González on 09/10/15.
 //  Copyright (c) 2015 CEDAC. All rights reserved.
 //
 
 import UIKit
 
-class MultiPlayerPlayer_ViewController: UIViewController {
+class PlayModeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Modo de juego"
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        switch segue.identifier!{
+        case "segueSinglePlayer":
+            let destination = segue.destinationViewController as! SelectLevelViewController
+            destination.gameMode = 0
+            println("singleplayer")
+        case "segueMultiPlayer":            
+            println("Multiplayer")
+        default:
+            println("wutMode")
+        }
     }
     
 

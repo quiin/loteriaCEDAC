@@ -12,24 +12,16 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
 
     
     //vars
-    var flipped = [Bool] (count: 9, repeatedValue: false)
     var cards = ["🐂", "🐎","🐯","🐤","👉","👌","🎁","🎂", "🎃"]
-    
-    var isFirstPairOpen = false
-    var firstPairIndex = 0
-    var firstPair = ""
-    var secondPair = ""
+    var selectedLevel = 0
+    var hideCurrentCard = false
+    var timer : NSTimer = NSTimer()
     
     //constants
-    let backCard = "❓"
     let cellId = "cardCell"
     
     //Outlets
     @IBOutlet weak var currentCard: UILabel!
-
-    
-    
-    
     
     //Collection methods
     //items in section
@@ -44,44 +36,52 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     
     //handle item select
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        
+        //Animar cambio
+        let celda = collectionView.cellForItemAtIndexPath(indexPath)
+        let lbCelda = celda?.viewWithTag(100) as! UILabel
+        if(lbCelda.text == currentCard.text){
+            var alert = UIAlertController(title: "Congratz!", message: "You won GG 👏🏼🎉", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        changeCurrentCard()
     }
     
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell: UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(cellId, forIndexPath: indexPath) as!UICollectionViewCell
         let lblCard:UILabel = cell.viewWithTag(100) as! UILabel
-        if flipped[indexPath.row] == true {
-                lblCard.text = cards[indexPath.row]
-        }else{
-            lblCard.text = backCard
-        }
-        backCard
+        lblCard.text = cards[indexPath.row]
         cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
         return cell
     }
 
-    //shuffleFlags
-    func shuffleFlags(){
-        for i in 0..<flipped.count{
-            var j = Int(arc4random())%flipped.count
-            let temp = flipped[i]
-            flipped[i] = flipped[j]
-            flipped[j] = temp
+    func shuffleCards(){
+        for i in 0..<cards.count{
+            var j = Int(arc4random())%cards.count
+            let temp = cards[i]
+            cards[i] = cards[j]
+            cards[j] = temp
         }
+    }
+    
+    func changeCurrentCard(){
+        currentCard.text = cards[Int(arc4random())%cards.count]
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        shuffleFlags()
-        println("added")
+        self.title = "Nivel \(selectedLevel)"
+        currentCard.hidden = hideCurrentCard
+        changeCurrentCard()
+        shuffleCards()
+        timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "changeCurrentCard", userInfo: nil, repeats: true)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
 }
 

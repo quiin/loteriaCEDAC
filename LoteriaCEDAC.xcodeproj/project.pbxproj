@@ -13,14 +13,13 @@
 		9E2C25551B9E4B3B00F50E99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E2C25541B9E4B3B00F50E99 /* Images.xcassets */; };
 		9E2C25581B9E4B3B00F50E99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E2C25561B9E4B3B00F50E99 /* LaunchScreen.xib */; };
 		9E2C25641B9E4B3B00F50E99 /* LoteriaCEDACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2C25631B9E4B3B00F50E99 /* LoteriaCEDACTests.swift */; };
+		9ECC60451BC8411500F8A70D /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC60441BC8411500F8A70D /* SelectLevelViewController.swift */; };
+		9ECC60471BC843A200F8A70D /* PlayModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC60461BC843A200F8A70D /* PlayModeViewController.swift */; };
+		9ECC60491BC8456E00F8A70D /* MultiplayerRoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC60481BC8456E00F8A70D /* MultiplayerRoleViewController.swift */; };
 		9EE8E3441BA773CD00BAC95C /* maestra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE8E3401BA773CD00BAC95C /* maestra.jpg */; };
 		9EE8E3451BA773CD00BAC95C /* tiza.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE8E3411BA773CD00BAC95C /* tiza.png */; };
 		9EE8E3461BA773CD00BAC95C /* llave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE8E3421BA773CD00BAC95C /* llave.jpg */; };
 		9EE8E3471BA773CD00BAC95C /* gato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE8E3431BA773CD00BAC95C /* gato.jpg */; };
-		CC8814181BC8185B00A79A2F /* mainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8814171BC8185B00A79A2F /* mainMenu.swift */; };
-		CCA569B31BC82B7200BC5BFA /* playModeMenu_viewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA569B21BC82B7200BC5BFA /* playModeMenu_viewControllerViewController.swift */; };
-		CCA569B71BC8323F00BC5BFA /* MultiPlayerPlayer_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA569B61BC8323F00BC5BFA /* MultiPlayerPlayer_ViewController.swift */; };
-		CCA569B91BC8325100BC5BFA /* MultiPlayerDealer_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA569B81BC8325100BC5BFA /* MultiPlayerDealer_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +43,13 @@
 		9E2C255D1B9E4B3B00F50E99 /* LoteriaCEDACTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoteriaCEDACTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2C25621B9E4B3B00F50E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E2C25631B9E4B3B00F50E99 /* LoteriaCEDACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoteriaCEDACTests.swift; sourceTree = "<group>"; };
+		9ECC60441BC8411500F8A70D /* SelectLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
+		9ECC60461BC843A200F8A70D /* PlayModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayModeViewController.swift; sourceTree = "<group>"; };
+		9ECC60481BC8456E00F8A70D /* MultiplayerRoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerRoleViewController.swift; sourceTree = "<group>"; };
 		9EE8E3401BA773CD00BAC95C /* maestra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maestra.jpg; sourceTree = "<group>"; };
 		9EE8E3411BA773CD00BAC95C /* tiza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiza.png; sourceTree = "<group>"; };
 		9EE8E3421BA773CD00BAC95C /* llave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = llave.jpg; sourceTree = "<group>"; };
 		9EE8E3431BA773CD00BAC95C /* gato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gato.jpg; sourceTree = "<group>"; };
-		CC8814171BC8185B00A79A2F /* mainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainMenu.swift; sourceTree = "<group>"; };
-		CCA569B21BC82B7200BC5BFA /* playModeMenu_viewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playModeMenu_viewControllerViewController.swift; sourceTree = "<group>"; };
-		CCA569B61BC8323F00BC5BFA /* MultiPlayerPlayer_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPlayerPlayer_ViewController.swift; sourceTree = "<group>"; };
-		CCA569B81BC8325100BC5BFA /* MultiPlayerDealer_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPlayerDealer_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,14 +97,13 @@
 				9EE8E3431BA773CD00BAC95C /* gato.jpg */,
 				9E2C254D1B9E4B3B00F50E99 /* AppDelegate.swift */,
 				9E2C254F1B9E4B3B00F50E99 /* loteria.swift */,
+				9ECC60441BC8411500F8A70D /* SelectLevelViewController.swift */,
+				9ECC60461BC843A200F8A70D /* PlayModeViewController.swift */,
+				9ECC60481BC8456E00F8A70D /* MultiplayerRoleViewController.swift */,
 				9E2C25511B9E4B3B00F50E99 /* Main.storyboard */,
 				9E2C25541B9E4B3B00F50E99 /* Images.xcassets */,
 				9E2C25561B9E4B3B00F50E99 /* LaunchScreen.xib */,
 				9E2C254B1B9E4B3B00F50E99 /* Supporting Files */,
-				CCA569B21BC82B7200BC5BFA /* playModeMenu_viewControllerViewController.swift */,
-				CCA569B61BC8323F00BC5BFA /* MultiPlayerPlayer_ViewController.swift */,
-				CCA569B81BC8325100BC5BFA /* MultiPlayerDealer_ViewController.swift */,
-				CC8814171BC8185B00A79A2F /* mainMenu.swift */,
 			);
 			path = LoteriaCEDAC;
 			sourceTree = "<group>";
@@ -240,12 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC8814181BC8185B00A79A2F /* mainMenu.swift in Sources */,
-				CCA569B71BC8323F00BC5BFA /* MultiPlayerPlayer_ViewController.swift in Sources */,
-				CCA569B91BC8325100BC5BFA /* MultiPlayerDealer_ViewController.swift in Sources */,
+				9ECC60471BC843A200F8A70D /* PlayModeViewController.swift in Sources */,
+				9ECC60451BC8411500F8A70D /* SelectLevelViewController.swift in Sources */,
 				9E2C25501B9E4B3B00F50E99 /* loteria.swift in Sources */,
 				9E2C254E1B9E4B3B00F50E99 /* AppDelegate.swift in Sources */,
-				CCA569B31BC82B7200BC5BFA /* playModeMenu_viewControllerViewController.swift in Sources */,
+				9ECC60491BC8456E00F8A70D /* MultiplayerRoleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
