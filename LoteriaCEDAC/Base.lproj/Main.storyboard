@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Menu-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="mainMenu" customModule="LoteriaCEDAC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZH-mu-sJx">
-                                <rect key="frame" x="266" y="189" width="47" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZH-mu-sJx">
+                                <rect key="frame" x="22" y="520" width="47" height="30"/>
                                 <state key="normal" title="Nivel 2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -26,8 +26,8 @@
                                     <segue destination="GCJ-fD-4AD" kind="show" id="zV6-qv-ofk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgQ-7q-PvI">
-                                <rect key="frame" x="266" y="239" width="47" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgQ-7q-PvI">
+                                <rect key="frame" x="22" y="570" width="47" height="30"/>
                                 <state key="normal" title="Nivel 3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -35,14 +35,8 @@
                                     <segue destination="zWA-Yb-nN0" kind="show" id="afX-yH-eGt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Logo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3E-HN-PUR">
-                                <rect key="frame" x="244" y="98" width="90" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjC-7O-BuZ">
-                                <rect key="frame" x="266" y="139" width="47" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjC-7O-BuZ">
+                                <rect key="frame" x="22" y="470" width="47" height="30"/>
                                 <state key="normal" title="Nivel 1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -54,9 +48,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="LZH-mu-sJx" secondAttribute="centerX" constant="10.5" id="5vR-DO-X2W"/>
-                            <constraint firstItem="VjC-7O-BuZ" firstAttribute="top" secondItem="K3E-HN-PUR" secondAttribute="bottom" constant="20" id="Rfv-Z1-nUN"/>
-                            <constraint firstAttribute="centerX" secondItem="K3E-HN-PUR" secondAttribute="centerX" constant="11" id="XXL-zH-NE7"/>
-                            <constraint firstItem="K3E-HN-PUR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="fDM-ph-bWu"/>
                             <constraint firstItem="lgQ-7q-PvI" firstAttribute="top" secondItem="LZH-mu-sJx" secondAttribute="bottom" constant="20" id="hEA-34-P0k"/>
                             <constraint firstItem="LZH-mu-sJx" firstAttribute="top" secondItem="VjC-7O-BuZ" secondAttribute="bottom" constant="20" id="lcV-PS-xsc"/>
                             <constraint firstAttribute="centerX" secondItem="lgQ-7q-PvI" secondAttribute="centerX" constant="10.5" id="wTz-1U-zYN"/>
@@ -130,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdH-Fx-Ixu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-646" y="231"/>
+            <point key="canvasLocation" x="-709" y="-99"/>
         </scene>
         <!--Memory Game Controller-->
         <scene sceneID="suB-L5-vdl">
@@ -164,7 +155,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8H-Q7-tsA">
                                                     <rect key="frame" x="0.0" y="0.0" width="83" height="81"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -184,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9VX-td-iPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601" y="-664"/>
+            <point key="canvasLocation" x="144" y="-942"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5c1-jN-LUR">
@@ -202,7 +193,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbh-ao-7Hr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1618" y="-1827"/>
+            <point key="canvasLocation" x="-1548" y="-1790"/>
         </scene>
         <!--Instrucciones-->
         <scene sceneID="Kve-o0-hgs">
@@ -249,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NbE-z7-h03" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-634" y="-784"/>
+            <point key="canvasLocation" x="-709" y="-942"/>
         </scene>
         <!--Instrucciones-->
         <scene sceneID="t8H-Go-t8V">
@@ -296,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqE-LR-rMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="-1812"/>
+            <point key="canvasLocation" x="144" y="-1790"/>
         </scene>
     </scenes>
     <resources>
