@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MemoryGameController.swift
 //  LoteriaCEDAC
 //
 //  Created by Carlos Alejandro Reyna González on 07/09/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MemoryGameController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
