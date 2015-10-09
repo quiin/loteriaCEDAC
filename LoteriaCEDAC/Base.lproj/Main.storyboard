@@ -182,6 +182,9 @@
                             <constraint firstItem="s5h-LT-pVR" firstAttribute="trailing" secondItem="S9U-pp-eAe" secondAttribute="trailingMargin" id="vXf-N4-p6D"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentCard" destination="pK6-eF-V0e" id="Kdd-dM-kJ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9VX-td-iPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

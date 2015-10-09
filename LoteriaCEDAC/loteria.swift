@@ -25,7 +25,9 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     let backCard = "❓"
     
     
-    
+    //Outlets
+    @IBOutlet weak var currentCard: UILabel!
+
     
     
     
