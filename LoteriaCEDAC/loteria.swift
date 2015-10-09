@@ -35,7 +35,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     //Collection methods
     //items in section
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cards.count
+        return 18
     }
     
     //number of sections
