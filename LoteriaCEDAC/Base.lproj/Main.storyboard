@@ -197,6 +197,10 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="9yM-Ef-QHD" id="N0e-WM-gSb"/>
+                                    <outlet property="delegate" destination="9yM-Ef-QHD" id="Y0r-PG-FAL"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
