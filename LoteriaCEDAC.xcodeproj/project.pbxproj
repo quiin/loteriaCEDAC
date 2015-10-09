@@ -18,6 +18,9 @@
 		9EE8E3461BA773CD00BAC95C /* llave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE8E3421BA773CD00BAC95C /* llave.jpg */; };
 		9EE8E3471BA773CD00BAC95C /* gato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE8E3431BA773CD00BAC95C /* gato.jpg */; };
 		CC8814181BC8185B00A79A2F /* mainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8814171BC8185B00A79A2F /* mainMenu.swift */; };
+		CCA569B31BC82B7200BC5BFA /* playModeMenu_viewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA569B21BC82B7200BC5BFA /* playModeMenu_viewControllerViewController.swift */; };
+		CCA569B71BC8323F00BC5BFA /* MultiPlayerPlayer_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA569B61BC8323F00BC5BFA /* MultiPlayerPlayer_ViewController.swift */; };
+		CCA569B91BC8325100BC5BFA /* MultiPlayerDealer_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA569B81BC8325100BC5BFA /* MultiPlayerDealer_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		9EE8E3421BA773CD00BAC95C /* llave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = llave.jpg; sourceTree = "<group>"; };
 		9EE8E3431BA773CD00BAC95C /* gato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gato.jpg; sourceTree = "<group>"; };
 		CC8814171BC8185B00A79A2F /* mainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainMenu.swift; sourceTree = "<group>"; };
+		CCA569B21BC82B7200BC5BFA /* playModeMenu_viewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playModeMenu_viewControllerViewController.swift; sourceTree = "<group>"; };
+		CCA569B61BC8323F00BC5BFA /* MultiPlayerPlayer_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPlayerPlayer_ViewController.swift; sourceTree = "<group>"; };
+		CCA569B81BC8325100BC5BFA /* MultiPlayerDealer_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPlayerDealer_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 				9E2C25541B9E4B3B00F50E99 /* Images.xcassets */,
 				9E2C25561B9E4B3B00F50E99 /* LaunchScreen.xib */,
 				9E2C254B1B9E4B3B00F50E99 /* Supporting Files */,
+				CCA569B21BC82B7200BC5BFA /* playModeMenu_viewControllerViewController.swift */,
+				CCA569B61BC8323F00BC5BFA /* MultiPlayerPlayer_ViewController.swift */,
+				CCA569B81BC8325100BC5BFA /* MultiPlayerDealer_ViewController.swift */,
 			);
 			path = LoteriaCEDAC;
 			sourceTree = "<group>";
@@ -232,8 +241,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC8814181BC8185B00A79A2F /* mainMenu.swift in Sources */,
+				CCA569B71BC8323F00BC5BFA /* MultiPlayerPlayer_ViewController.swift in Sources */,
+				CCA569B91BC8325100BC5BFA /* MultiPlayerDealer_ViewController.swift in Sources */,
 				9E2C25501B9E4B3B00F50E99 /* loteria.swift in Sources */,
 				9E2C254E1B9E4B3B00F50E99 /* AppDelegate.swift in Sources */,
+				CCA569B31BC82B7200BC5BFA /* playModeMenu_viewControllerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
