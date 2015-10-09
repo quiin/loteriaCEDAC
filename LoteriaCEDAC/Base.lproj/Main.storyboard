@@ -135,8 +135,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="s5h-LT-pVR">
-                                <rect key="frame" x="8" y="6" width="576" height="586"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="s5h-LT-pVR">
+                                <rect key="frame" x="8" y="144" width="576" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GgF-zq-b3t">
                                     <size key="itemSize" width="83" height="81"/>
@@ -164,12 +164,21 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pK6-eF-V0e">
+                                <rect key="frame" x="279" y="96" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="s5h-LT-pVR" firstAttribute="leading" secondItem="S9U-pp-eAe" secondAttribute="leadingMargin" constant="-7" id="2Zk-y5-vvq"/>
-                            <constraint firstItem="8aa-Us-8vS" firstAttribute="top" secondItem="s5h-LT-pVR" secondAttribute="bottom" constant="8" id="poQ-vk-E0y"/>
-                            <constraint firstItem="s5h-LT-pVR" firstAttribute="trailing" secondItem="S9U-pp-eAe" secondAttribute="trailingMargin" id="s2O-0J-QHM"/>
+                            <constraint firstItem="s5h-LT-pVR" firstAttribute="leading" secondItem="S9U-pp-eAe" secondAttribute="leadingMargin" constant="-8" id="04U-3r-3U2"/>
+                            <constraint firstItem="pK6-eF-V0e" firstAttribute="top" secondItem="FAv-XD-UVk" secondAttribute="bottom" constant="32" id="9fY-ZZ-L6B"/>
+                            <constraint firstItem="s5h-LT-pVR" firstAttribute="top" secondItem="pK6-eF-V0e" secondAttribute="bottom" constant="27" id="FqI-fi-WkA"/>
+                            <constraint firstItem="8aa-Us-8vS" firstAttribute="top" secondItem="s5h-LT-pVR" secondAttribute="bottom" constant="8" id="PnK-9N-xDa"/>
+                            <constraint firstAttribute="centerX" secondItem="pK6-eF-V0e" secondAttribute="centerX" id="V6R-Dd-up6"/>
+                            <constraint firstItem="s5h-LT-pVR" firstAttribute="trailing" secondItem="S9U-pp-eAe" secondAttribute="trailingMargin" id="vXf-N4-p6D"/>
                         </constraints>
                     </view>
                 </viewController>
