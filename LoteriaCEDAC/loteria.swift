@@ -23,7 +23,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     
     //constants
     let backCard = "❓"
-    
+    let cellId = "cardCell"
     
     //Outlets
     @IBOutlet weak var currentCard: UILabel!
@@ -50,8 +50,16 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.cellForItemAtIndexPath(indexPath)
-       return cell!
+        let cell: UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(cellId, forIndexPath: indexPath) as!UICollectionViewCell
+        let lblCard:UILabel = cell.viewWithTag(100) as! UILabel
+        if flipped[indexPath.row] == true {
+                lblCard.text = cards[indexPath.row]
+        }else{
+            lblCard.text = backCard
+        }
+        backCard
+        cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
+        return cell
     }
 
     //shuffleFlags
