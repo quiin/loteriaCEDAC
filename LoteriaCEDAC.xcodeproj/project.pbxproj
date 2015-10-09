@@ -98,7 +98,6 @@
 				9EE8E3421BA773CD00BAC95C /* llave.jpg */,
 				9EE8E3431BA773CD00BAC95C /* gato.jpg */,
 				9E2C254D1B9E4B3B00F50E99 /* AppDelegate.swift */,
-				CC8814171BC8185B00A79A2F /* mainMenu.swift */,
 				9E2C254F1B9E4B3B00F50E99 /* loteria.swift */,
 				9E2C25511B9E4B3B00F50E99 /* Main.storyboard */,
 				9E2C25541B9E4B3B00F50E99 /* Images.xcassets */,
@@ -107,6 +106,7 @@
 				CCA569B21BC82B7200BC5BFA /* playModeMenu_viewControllerViewController.swift */,
 				CCA569B61BC8323F00BC5BFA /* MultiPlayerPlayer_ViewController.swift */,
 				CCA569B81BC8325100BC5BFA /* MultiPlayerDealer_ViewController.swift */,
+				CC8814171BC8185B00A79A2F /* mainMenu.swift */,
 			);
 			path = LoteriaCEDAC;
 			sourceTree = "<group>";
