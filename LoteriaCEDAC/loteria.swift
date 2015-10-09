@@ -13,15 +13,21 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     
     //vars
     var cards = ["🐂", "🐎","🐯","🐤","👉","👌","🎁","🎂", "🎃"]
+    var cardsForDealing = ["🐂", "🐎","🐯","🐤","👉","👌","🎁","🎂", "🎃"]
+    //var guessedCards: [String] = []
+    var selectedCards = 0
     var selectedLevel = 0
     var hideCurrentCard = false
     var timer : NSTimer = NSTimer()
+    var timerValue = 0
+
     
     //constants
     let cellId = "cardCell"
     
     //Outlets
     @IBOutlet weak var currentCard: UILabel!
+    @IBOutlet weak var lblTimeLeft: UILabel!
     
     //Collection methods
     //items in section
@@ -37,14 +43,31 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     //handle item select
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         //Animar cambio
-        let celda = collectionView.cellForItemAtIndexPath(indexPath)
-        let lbCelda = celda?.viewWithTag(100) as! UILabel
-        if(lbCelda.text == currentCard.text){
-            var alert = UIAlertController(title: "Congratz!", message: "You won GG 👏🏼🎉", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
+        let cell = collectionView.cellForItemAtIndexPath(indexPath)
+        let lblCell = cell?.viewWithTag(100) as! UILabel
+        //match!
+        if(lblCell.text == currentCard.text) {
+            selectedCards++
+            if didWin(){
+                var alert = UIAlertController(title: "Congratz!", message: "You won GG 👏🏼🎉", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }else{
+                cell!.backgroundColor = UIColor(red: 0, green: 255, blue: 0, alpha: 0.4)
+                
+            }
+            cardsForDealing = cardsForDealing.filter(){$0 != self.currentCard.text}
+            if !didWin() {
+                changeCurrentCard()
+            }
         }
-        changeCurrentCard()
+        
+    }
+    
+
+    
+    func didWin() -> Bool{
+        return cardsForDealing.isEmpty
     }
     
     
@@ -66,7 +89,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     }
     
     func changeCurrentCard(){
-        currentCard.text = cards[Int(arc4random())%cards.count]
+        currentCard.text = cardsForDealing[Int(arc4random())%cardsForDealing.count]
     }
     
     override func viewDidLoad() {
@@ -76,6 +99,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
         changeCurrentCard()
         shuffleCards()
         timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "changeCurrentCard", userInfo: nil, repeats: true)
+        println(timer.timeInterval.description)
     }
     
     override func didReceiveMemoryWarning() {

@@ -22,7 +22,6 @@ class PlayModeViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
         switch segue.identifier!{
         case "segueSinglePlayer":
             let destination = segue.destinationViewController as! SelectLevelViewController
