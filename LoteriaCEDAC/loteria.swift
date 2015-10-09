@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MemoryGameController: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource {
+class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource {
 
     
     //vars
@@ -65,6 +65,7 @@ class MemoryGameController: UIViewController, UICollectionViewDelegate,UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
         shuffleFlags()
+        println("added")
     }
 
     override func didReceiveMemoryWarning() {
