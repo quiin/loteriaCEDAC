@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Main Menu-->
+        <!--Lotería CEDAC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="mainMenu" customModule="LoteriaCEDAC" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZH-mu-sJx">
-                                <rect key="frame" x="258" y="285" width="47" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZH-mu-sJx">
+                                <rect key="frame" x="197" y="433" width="47" height="30"/>
                                 <state key="normal" title="Nivel 2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -26,8 +26,8 @@
                                     <segue destination="GCJ-fD-4AD" kind="show" id="zV6-qv-ofk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgQ-7q-PvI">
-                                <rect key="frame" x="258" y="335" width="47" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgQ-7q-PvI">
+                                <rect key="frame" x="197" y="483" width="47" height="30"/>
                                 <state key="normal" title="Nivel 3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -35,8 +35,8 @@
                                     <segue destination="zWA-Yb-nN0" kind="show" id="afX-yH-eGt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjC-7O-BuZ">
-                                <rect key="frame" x="258" y="235" width="47" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjC-7O-BuZ">
+                                <rect key="frame" x="197" y="383" width="47" height="30"/>
                                 <state key="normal" title="Nivel 1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -44,18 +44,42 @@
                                     <segue destination="zWA-Yb-nN0" kind="show" id="ZhJ-oq-0gH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0he-EY-d9B">
+                                <rect key="frame" x="254" y="179" width="92" height="30"/>
+                                <state key="normal" title="Instrucciones">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdV-W2-CPu">
+                                <rect key="frame" x="265" y="237" width="70" height="30"/>
+                                <state key="normal" title="Acerca de">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIs-xa-Ai5">
+                                <rect key="frame" x="281" y="123" width="39" height="30"/>
+                                <state key="normal" title="Jugar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="LZH-mu-sJx" secondAttribute="centerX" constant="10.5" id="5vR-DO-X2W"/>
-                            <constraint firstItem="VjC-7O-BuZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Pur-K6-Ezm"/>
+                            <constraint firstAttribute="centerX" secondItem="LZH-mu-sJx" secondAttribute="centerX" constant="79.5" id="5vR-DO-X2W"/>
+                            <constraint firstAttribute="centerX" secondItem="0he-EY-d9B" secondAttribute="centerX" id="8f5-3T-brG"/>
+                            <constraint firstItem="0he-EY-d9B" firstAttribute="top" secondItem="WIs-xa-Ai5" secondAttribute="bottom" constant="26" id="DXf-AH-4di"/>
+                            <constraint firstItem="cdV-W2-CPu" firstAttribute="top" secondItem="0he-EY-d9B" secondAttribute="bottom" constant="28" id="F7c-cc-Vbt"/>
+                            <constraint firstAttribute="centerX" secondItem="WIs-xa-Ai5" secondAttribute="centerX" constant="-0.5" id="GMN-MY-3Nv"/>
+                            <constraint firstItem="VjC-7O-BuZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="319" id="Pur-K6-Ezm"/>
                             <constraint firstItem="lgQ-7q-PvI" firstAttribute="top" secondItem="LZH-mu-sJx" secondAttribute="bottom" constant="20" id="hEA-34-P0k"/>
+                            <constraint firstAttribute="centerX" secondItem="cdV-W2-CPu" secondAttribute="centerX" id="kyQ-FA-Mpx"/>
                             <constraint firstItem="LZH-mu-sJx" firstAttribute="top" secondItem="VjC-7O-BuZ" secondAttribute="bottom" constant="20" id="lcV-PS-xsc"/>
-                            <constraint firstAttribute="centerX" secondItem="lgQ-7q-PvI" secondAttribute="centerX" constant="10.5" id="wTz-1U-zYN"/>
-                            <constraint firstAttribute="centerX" secondItem="VjC-7O-BuZ" secondAttribute="centerX" constant="10.5" id="zI1-uG-XVe"/>
+                            <constraint firstAttribute="centerX" secondItem="lgQ-7q-PvI" secondAttribute="centerX" constant="79.5" id="wTz-1U-zYN"/>
+                            <constraint firstItem="WIs-xa-Ai5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="wfd-xJ-Kun"/>
+                            <constraint firstAttribute="centerX" secondItem="VjC-7O-BuZ" secondAttribute="centerX" constant="79.5" id="zI1-uG-XVe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wpk-Uk-sl3"/>
+                    <navigationItem key="navigationItem" title="Lotería CEDAC" id="wpk-Uk-sl3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,6 +160,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pK6-eF-V0e">
+                                <rect key="frame" x="279" y="96" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="s5h-LT-pVR">
                                 <rect key="frame" x="8" y="144" width="576" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -165,12 +195,6 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pK6-eF-V0e">
-                                <rect key="frame" x="279" y="96" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
