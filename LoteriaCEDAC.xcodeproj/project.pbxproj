@@ -13,10 +13,21 @@
 		9E2C25551B9E4B3B00F50E99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E2C25541B9E4B3B00F50E99 /* Images.xcassets */; };
 		9E2C25581B9E4B3B00F50E99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E2C25561B9E4B3B00F50E99 /* LaunchScreen.xib */; };
 		9E2C25641B9E4B3B00F50E99 /* LoteriaCEDACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2C25631B9E4B3B00F50E99 /* LoteriaCEDACTests.swift */; };
+		9EBDE3EC1BCC6467005D8FD3 /* Boton1Jug.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBDE3E01BCC6467005D8FD3 /* Boton1Jug.png */; };
+		9EBDE3ED1BCC6467005D8FD3 /* BotonAcerca.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBDE3E11BCC6467005D8FD3 /* BotonAcerca.png */; };
+		9EBDE3EE1BCC6467005D8FD3 /* BotonDarLasCartas.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBDE3E21BCC6467005D8FD3 /* BotonDarLasCartas.png */; };
+		9EBDE3EF1BCC6467005D8FD3 /* BotonInstrucciones.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBDE3E31BCC6467005D8FD3 /* BotonInstrucciones.png */; };
+		9EBDE3F01BCC6467005D8FD3 /* BotonJugar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBDE3E41BCC6467005D8FD3 /* BotonJugar.png */; };
+		9EBDE3F11BCC6467005D8FD3 /* BotonMultijug.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBDE3E51BCC6467005D8FD3 /* BotonMultijug.png */; };
+		9EBDE3F21BCC6467005D8FD3 /* BotonNivel1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBDE3E61BCC6467005D8FD3 /* BotonNivel1.png */; };
+		9EBDE3F31BCC6467005D8FD3 /* BotonNivel2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBDE3E71BCC6467005D8FD3 /* BotonNivel2.png */; };
+		9EBDE3F41BCC6467005D8FD3 /* BotonNivel3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBDE3E81BCC6467005D8FD3 /* BotonNivel3.png */; };
+		9EBDE3F51BCC6467005D8FD3 /* Fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBDE3E91BCC6467005D8FD3 /* Fondo.png */; };
+		9EBDE3F61BCC6467005D8FD3 /* LogoLaLotería.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EBDE3EA1BCC6467005D8FD3 /* LogoLaLotería.png */; };
+		9EBDE3F71BCC6467005D8FD3 /* maestra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EBDE3EB1BCC6467005D8FD3 /* maestra.jpg */; };
 		9ECC60451BC8411500F8A70D /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC60441BC8411500F8A70D /* SelectLevelViewController.swift */; };
 		9ECC60471BC843A200F8A70D /* PlayModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC60461BC843A200F8A70D /* PlayModeViewController.swift */; };
 		9ECC60491BC8456E00F8A70D /* MultiplayerRoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC60481BC8456E00F8A70D /* MultiplayerRoleViewController.swift */; };
-		9EDDE36E1BCC60C0003D51D8 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 9EDDE36D1BCC60C0003D51D8 /* Images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +51,21 @@
 		9E2C255D1B9E4B3B00F50E99 /* LoteriaCEDACTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoteriaCEDACTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2C25621B9E4B3B00F50E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E2C25631B9E4B3B00F50E99 /* LoteriaCEDACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoteriaCEDACTests.swift; sourceTree = "<group>"; };
+		9EBDE3E01BCC6467005D8FD3 /* Boton1Jug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Boton1Jug.png; path = Images/Boton1Jug.png; sourceTree = "<group>"; };
+		9EBDE3E11BCC6467005D8FD3 /* BotonAcerca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotonAcerca.png; path = Images/BotonAcerca.png; sourceTree = "<group>"; };
+		9EBDE3E21BCC6467005D8FD3 /* BotonDarLasCartas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotonDarLasCartas.png; path = Images/BotonDarLasCartas.png; sourceTree = "<group>"; };
+		9EBDE3E31BCC6467005D8FD3 /* BotonInstrucciones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotonInstrucciones.png; path = Images/BotonInstrucciones.png; sourceTree = "<group>"; };
+		9EBDE3E41BCC6467005D8FD3 /* BotonJugar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotonJugar.png; path = Images/BotonJugar.png; sourceTree = "<group>"; };
+		9EBDE3E51BCC6467005D8FD3 /* BotonMultijug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotonMultijug.png; path = Images/BotonMultijug.png; sourceTree = "<group>"; };
+		9EBDE3E61BCC6467005D8FD3 /* BotonNivel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotonNivel1.png; path = Images/BotonNivel1.png; sourceTree = "<group>"; };
+		9EBDE3E71BCC6467005D8FD3 /* BotonNivel2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotonNivel2.png; path = Images/BotonNivel2.png; sourceTree = "<group>"; };
+		9EBDE3E81BCC6467005D8FD3 /* BotonNivel3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotonNivel3.png; path = Images/BotonNivel3.png; sourceTree = "<group>"; };
+		9EBDE3E91BCC6467005D8FD3 /* Fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fondo.png; path = Images/Fondo.png; sourceTree = "<group>"; };
+		9EBDE3EA1BCC6467005D8FD3 /* LogoLaLotería.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LogoLaLotería.png"; path = "Images/LogoLaLotería.png"; sourceTree = "<group>"; };
+		9EBDE3EB1BCC6467005D8FD3 /* maestra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = maestra.jpg; path = Images/maestra.jpg; sourceTree = "<group>"; };
 		9ECC60441BC8411500F8A70D /* SelectLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
 		9ECC60461BC843A200F8A70D /* PlayModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayModeViewController.swift; sourceTree = "<group>"; };
 		9ECC60481BC8456E00F8A70D /* MultiplayerRoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerRoleViewController.swift; sourceTree = "<group>"; };
-		9EDDE36D1BCC60C0003D51D8 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +107,18 @@
 		9E2C254A1B9E4B3B00F50E99 /* LoteriaCEDAC */ = {
 			isa = PBXGroup;
 			children = (
-				9EDDE36D1BCC60C0003D51D8 /* Images */,
+				9EBDE3E01BCC6467005D8FD3 /* Boton1Jug.png */,
+				9EBDE3E11BCC6467005D8FD3 /* BotonAcerca.png */,
+				9EBDE3E21BCC6467005D8FD3 /* BotonDarLasCartas.png */,
+				9EBDE3E31BCC6467005D8FD3 /* BotonInstrucciones.png */,
+				9EBDE3E41BCC6467005D8FD3 /* BotonJugar.png */,
+				9EBDE3E51BCC6467005D8FD3 /* BotonMultijug.png */,
+				9EBDE3E61BCC6467005D8FD3 /* BotonNivel1.png */,
+				9EBDE3E71BCC6467005D8FD3 /* BotonNivel2.png */,
+				9EBDE3E81BCC6467005D8FD3 /* BotonNivel3.png */,
+				9EBDE3E91BCC6467005D8FD3 /* Fondo.png */,
+				9EBDE3EA1BCC6467005D8FD3 /* LogoLaLotería.png */,
+				9EBDE3EB1BCC6467005D8FD3 /* maestra.jpg */,
 				9E2C254D1B9E4B3B00F50E99 /* AppDelegate.swift */,
 				9E2C254F1B9E4B3B00F50E99 /* loteria.swift */,
 				9ECC60441BC8411500F8A70D /* SelectLevelViewController.swift */,
@@ -204,9 +237,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EDDE36E1BCC60C0003D51D8 /* Images in Resources */,
+				9EBDE3F01BCC6467005D8FD3 /* BotonJugar.png in Resources */,
+				9EBDE3F61BCC6467005D8FD3 /* LogoLaLotería.png in Resources */,
+				9EBDE3F21BCC6467005D8FD3 /* BotonNivel1.png in Resources */,
+				9EBDE3F51BCC6467005D8FD3 /* Fondo.png in Resources */,
+				9EBDE3ED1BCC6467005D8FD3 /* BotonAcerca.png in Resources */,
+				9EBDE3F31BCC6467005D8FD3 /* BotonNivel2.png in Resources */,
+				9EBDE3F71BCC6467005D8FD3 /* maestra.jpg in Resources */,
+				9EBDE3F11BCC6467005D8FD3 /* BotonMultijug.png in Resources */,
+				9EBDE3EC1BCC6467005D8FD3 /* Boton1Jug.png in Resources */,
 				9E2C25531B9E4B3B00F50E99 /* Main.storyboard in Resources */,
+				9EBDE3EF1BCC6467005D8FD3 /* BotonInstrucciones.png in Resources */,
+				9EBDE3F41BCC6467005D8FD3 /* BotonNivel3.png in Resources */,
 				9E2C25581B9E4B3B00F50E99 /* LaunchScreen.xib in Resources */,
+				9EBDE3EE1BCC6467005D8FD3 /* BotonDarLasCartas.png in Resources */,
 				9E2C25551B9E4B3B00F50E99 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
