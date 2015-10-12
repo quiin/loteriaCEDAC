@@ -46,17 +46,17 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
         let cell = collectionView.cellForItemAtIndexPath(indexPath)
         let lblCell = cell?.viewWithTag(100) as! UILabel
         //match!
-        if(lblCell.text == currentCard.text) {
+        if lblCell.text == currentCard.text {
             selectedCards++
+            cardsForDealing = cardsForDealing.filter(){$0 != self.currentCard.text}
+            cell!.backgroundColor = UIColor(red: 0, green: 255, blue: 0, alpha: 0.4)
             if didWin(){
                 var alert = UIAlertController(title: "Congratz!", message: "You won GG 👏🏼🎉", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
-            }else{
-                cell!.backgroundColor = UIColor(red: 0, green: 255, blue: 0, alpha: 0.4)
-                
+                self.timer.invalidate()
+                self.timer = NSTimer()
             }
-            cardsForDealing = cardsForDealing.filter(){$0 != self.currentCard.text}
             if !didWin() {
                 changeCurrentCard()
             }
@@ -89,7 +89,9 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     }
     
     func changeCurrentCard(){
-        currentCard.text = cardsForDealing[Int(arc4random())%cardsForDealing.count]
+        if !cardsForDealing.isEmpty{
+            currentCard.text = cardsForDealing[Int(arc4random())%cardsForDealing.count]
+        }
     }
     
     override func viewDidLoad() {
