@@ -28,6 +28,8 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     //Outlets
     @IBOutlet weak var currentCard: UILabel!
     @IBOutlet weak var lblTimeLeft: UILabel!
+    @IBOutlet weak var cvCards: UICollectionView!
+    @IBOutlet weak var btnRestart: UIButton!
     
     //Collection methods
     //items in section
@@ -51,6 +53,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
             cardsForDealing = cardsForDealing.filter(){$0 != self.currentCard.text}
             cell!.backgroundColor = UIColor(red: 0, green: 255, blue: 0, alpha: 0.4)
             if didWin(){
+                btnRestart.enabled = true
                 var alert = UIAlertController(title: "Congratz!", message: "You won GG 👏🏼🎉", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
@@ -64,6 +67,18 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
         
     }
     
+    @IBAction func restartGame(sender: AnyObject) {
+        //reset buttons background color
+        for cell in cvCards.visibleCells() as! [UICollectionViewCell]{
+            cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
+        }
+        cardsForDealing = cards
+        selectedCards = 0
+        hideCurrentCard = false
+        timerValue = 0
+        viewDidLoad()
+        
+    }
 
     
     func didWin() -> Bool{
@@ -81,7 +96,8 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
 
     func shuffleCards(){
         for i in 0..<cards.count{
-            var j = Int(arc4random())%cards.count
+//            var j = Int(arc4random_un())%cards.count
+            var j = Int(arc4random_uniform(UInt32(cards.count)))
             let temp = cards[i]
             cards[i] = cards[j]
             cards[j] = temp
@@ -90,7 +106,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     
     func changeCurrentCard(){
         if !cardsForDealing.isEmpty{
-            currentCard.text = cardsForDealing[Int(arc4random())%cardsForDealing.count]
+            currentCard.text = cardsForDealing[Int(arc4random_uniform(UInt32(cardsForDealing.count)))]
         }
     }
     
@@ -101,7 +117,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
         changeCurrentCard()
         shuffleCards()
         timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "changeCurrentCard", userInfo: nil, repeats: true)
-        println(timer.timeInterval.description)
+        btnRestart.enabled = false
     }
     
     override func didReceiveMemoryWarning() {

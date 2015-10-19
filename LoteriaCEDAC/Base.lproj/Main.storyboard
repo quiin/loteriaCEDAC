@@ -532,10 +532,24 @@
                                     <segue destination="O5u-xs-TRh" kind="show" identifier="returnLevelSelect" id="D76-ym-RYc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zae-El-gQb">
+                                <rect key="frame" x="440" y="510" width="46" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Pvg-Jv-g9F"/>
+                                    <constraint firstAttribute="width" constant="46" id="oJi-Cn-r2p"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="arrow.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartGame:" destination="9yM-Ef-QHD" eventType="touchUpInside" id="6Ki-0G-CvW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="s5h-LT-pVR" firstAttribute="leading" secondItem="S9U-pp-eAe" secondAttribute="leadingMargin" constant="-8" id="04U-3r-3U2"/>
+                            <constraint firstItem="8aa-Us-8vS" firstAttribute="top" secondItem="Zae-El-gQb" secondAttribute="bottom" constant="47" id="3Op-yx-AfK"/>
                             <constraint firstItem="GSN-fT-x29" firstAttribute="leading" secondItem="S9U-pp-eAe" secondAttribute="leadingMargin" constant="-35" id="8Dp-lb-z0D"/>
                             <constraint firstItem="pK6-eF-V0e" firstAttribute="top" secondItem="FAv-XD-UVk" secondAttribute="bottom" constant="32" id="9fY-ZZ-L6B"/>
                             <constraint firstItem="8aa-Us-8vS" firstAttribute="top" secondItem="GSN-fT-x29" secondAttribute="bottom" constant="-8" id="EjO-al-uwH"/>
@@ -546,13 +560,16 @@
                             <constraint firstAttribute="centerX" secondItem="pK6-eF-V0e" secondAttribute="centerX" id="V6R-Dd-up6"/>
                             <constraint firstItem="dgz-nm-7UQ" firstAttribute="top" secondItem="FAv-XD-UVk" secondAttribute="bottom" constant="32" id="dCs-OY-lsg"/>
                             <constraint firstItem="Mln-LF-Idu" firstAttribute="trailing" secondItem="S9U-pp-eAe" secondAttribute="trailingMargin" id="mJW-qr-Il1"/>
+                            <constraint firstItem="Mln-LF-Idu" firstAttribute="leading" secondItem="Zae-El-gQb" secondAttribute="trailing" constant="52" id="mMS-9d-Q7f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GSN-fT-x29" secondAttribute="trailing" constant="-35" id="mmC-ip-rk1"/>
                             <constraint firstItem="8aa-Us-8vS" firstAttribute="top" secondItem="Mln-LF-Idu" secondAttribute="bottom" constant="47" id="oZb-V6-bHv"/>
                             <constraint firstItem="s5h-LT-pVR" firstAttribute="trailing" secondItem="S9U-pp-eAe" secondAttribute="trailingMargin" id="vXf-N4-p6D"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnRestart" destination="Zae-El-gQb" id="gHv-Tc-cel"/>
                         <outlet property="currentCard" destination="pK6-eF-V0e" id="Kdd-dM-kJ8"/>
+                        <outlet property="cvCards" destination="s5h-LT-pVR" id="GI8-ul-fd7"/>
                         <outlet property="lblTimeLeft" destination="dgz-nm-7UQ" id="Xjc-Dn-gX4"/>
                     </connections>
                 </viewController>
