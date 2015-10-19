@@ -274,7 +274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d6i-y1-jbt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896" y="-2581"/>
+            <point key="canvasLocation" x="847" y="-2640"/>
         </scene>
         <!--Multiplayer Role View Controller-->
         <scene sceneID="0e8-Kp-VcS">
@@ -631,6 +631,9 @@
                                 <state key="normal" backgroundImage="arrow.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="O5u-xs-TRh" kind="show" identifier="I" id="kEM-OX-MaZ"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LogoLaLotería.png" translatesAutoresizingMaskIntoConstraints="NO" id="j9T-XJ-YcQ">
                                 <rect key="frame" x="205" y="28" width="190" height="103"/>
@@ -678,7 +681,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="B7p-gP-y4n"/>
-        <segue reference="D76-ym-RYc"/>
+        <segue reference="kEM-OX-MaZ"/>
         <segue reference="oKq-ED-rFf"/>
         <segue reference="qhH-c5-V9i"/>
     </inferredMetricsTieBreakers>

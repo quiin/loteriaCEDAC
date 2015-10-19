@@ -64,21 +64,29 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
                 changeCurrentCard()
             }
         }else{
-            
+
+            UIView.animateWithDuration(0.2, animations: {
+                cell!.backgroundColor = UIColor(red: 255, green: 0, blue: 0, alpha: 0.7)
+                }, completion: {
+                    (value:Bool) in
+                    cell!.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
+            })
         }
         
     }
     
     @IBAction func restartGame(sender: AnyObject) {
         //reset buttons background color
+        cardsForDealing = cards
         for cell in cvCards.visibleCells() as! [UICollectionViewCell]{
             cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
         }
-        cardsForDealing = cards
         selectedCards = 0
         hideCurrentCard = false
         timerValue = 0
         viewDidLoad()
+        shuffleCards()
+        cvCards.reloadData()
         
     }
 
@@ -87,7 +95,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
         return cardsForDealing.isEmpty
     }
     
-    
+    //fill cards
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell: UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(cellId, forIndexPath: indexPath) as!UICollectionViewCell
         let lblCard:UILabel = cell.viewWithTag(100) as! UILabel
