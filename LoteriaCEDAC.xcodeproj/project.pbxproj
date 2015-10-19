@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9E12234E1BD5586500E33110 /* itesmLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E12234D1BD5586500E33110 /* itesmLogo.png */; };
+		9E1223521BD562AA00E33110 /* Restart.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E1223511BD562AA00E33110 /* Restart.png */; };
 		9E2C254E1B9E4B3B00F50E99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2C254D1B9E4B3B00F50E99 /* AppDelegate.swift */; };
 		9E2C25501B9E4B3B00F50E99 /* loteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2C254F1B9E4B3B00F50E99 /* loteria.swift */; };
 		9E2C25531B9E4B3B00F50E99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2C25511B9E4B3B00F50E99 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		9E12234D1BD5586500E33110 /* itesmLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = itesmLogo.png; path = Images/itesmLogo.png; sourceTree = "<group>"; };
+		9E1223511BD562AA00E33110 /* Restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Restart.png; path = Images/Restart.png; sourceTree = "<group>"; };
 		9E2C25481B9E4B3B00F50E99 /* LoteriaCEDAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoteriaCEDAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2C254C1B9E4B3B00F50E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E2C254D1B9E4B3B00F50E99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		9E2C254A1B9E4B3B00F50E99 /* LoteriaCEDAC */ = {
 			isa = PBXGroup;
 			children = (
+				9E1223511BD562AA00E33110 /* Restart.png */,
 				9E12234D1BD5586500E33110 /* itesmLogo.png */,
 				9EC758671BD5442F007AD577 /* arrow.png */,
 				9EBDE3E01BCC6467005D8FD3 /* Boton1Jug.png */,
@@ -244,6 +247,7 @@
 				9EBDE3F61BCC6467005D8FD3 /* LogoLaLotería.png in Resources */,
 				9EBDE3F21BCC6467005D8FD3 /* BotonNivel1.png in Resources */,
 				9E12234E1BD5586500E33110 /* itesmLogo.png in Resources */,
+				9E1223521BD562AA00E33110 /* Restart.png in Resources */,
 				9EBDE3F51BCC6467005D8FD3 /* Fondo.png in Resources */,
 				9EBDE3ED1BCC6467005D8FD3 /* BotonAcerca.png in Resources */,
 				9EBDE3F31BCC6467005D8FD3 /* BotonNivel2.png in Resources */,

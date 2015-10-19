@@ -538,7 +538,7 @@
                                     <constraint firstAttribute="height" constant="43" id="Pvg-Jv-g9F"/>
                                     <constraint firstAttribute="width" constant="46" id="oJi-Cn-r2p"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="arrow.png">
+                                <state key="normal" backgroundImage="Restart.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -580,7 +580,7 @@
         <!--Navigation Controller-->
         <scene sceneID="5c1-jN-LUR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cvx-Vb-VxF" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Cvx-Vb-VxF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gAp-20-wJ1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -672,6 +672,7 @@
         <image name="BotonNivel3.png" width="362" height="112"/>
         <image name="Fondo.png" width="1024" height="768"/>
         <image name="LogoLaLotería.png" width="347" height="184"/>
+        <image name="Restart.png" width="469" height="487"/>
         <image name="arrow.png" width="512" height="512"/>
         <image name="itesmLogo.png" width="474" height="474"/>
     </resources>
@@ -679,6 +680,6 @@
         <segue reference="B7p-gP-y4n"/>
         <segue reference="D76-ym-RYc"/>
         <segue reference="oKq-ED-rFf"/>
-        <segue reference="gh6-OC-rhN"/>
+        <segue reference="qhH-c5-V9i"/>
     </inferredMetricsTieBreakers>
 </document>

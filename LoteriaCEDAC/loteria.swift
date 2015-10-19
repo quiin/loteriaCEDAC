@@ -63,6 +63,8 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
             if !didWin() {
                 changeCurrentCard()
             }
+        }else{
+            
         }
         
     }
