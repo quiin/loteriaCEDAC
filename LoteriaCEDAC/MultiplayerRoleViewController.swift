@@ -26,12 +26,12 @@ class MultiplayerRoleViewController: UIViewController {
         switch segue.identifier!{
         case "segueAsPlayer":
             destination.gameMode = 1
-            println("Player")
+            print("Player")
         case "segueAsDealer":
             destination.gameMode = 2
-            println("Dealer")
+            print("Dealer")
         default:
-            println("wutAs")
+            print("wutAs")
         }
     }
 

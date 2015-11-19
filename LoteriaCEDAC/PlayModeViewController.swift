@@ -26,11 +26,11 @@ class PlayModeViewController: UIViewController {
         case "segueSinglePlayer":
             let destination = segue.destinationViewController as! SelectLevelViewController
             destination.gameMode = 0
-            println("singleplayer")
+            print("singleplayer")
         case "segueMultiPlayer":            
-            println("Multiplayer")
+            print("Multiplayer")
         default:
-            println("wutMode")
+            print("wutMode")
         }
     }
     

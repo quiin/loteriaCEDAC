@@ -54,7 +54,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
             cell!.backgroundColor = UIColor(red: 0, green: 255, blue: 0, alpha: 0.4)
             if didWin(){
                 btnRestart.enabled = true
-                var alert = UIAlertController(title: "¡Felicidades!", message: "¡Has ganado! 👏🏼🎉", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "¡Felicidades!", message: "¡Has ganado! 👏🏼🎉", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
                 self.timer.invalidate()
@@ -78,7 +78,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     @IBAction func restartGame(sender: AnyObject) {
         //reset buttons background color
         cardsForDealing = cards
-        for cell in cvCards.visibleCells() as! [UICollectionViewCell]{
+        for cell in cvCards.visibleCells() {
             cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
         }
         selectedCards = 0
@@ -97,7 +97,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     
     //fill cards
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell: UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(cellId, forIndexPath: indexPath) as!UICollectionViewCell
+        let cell: UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(cellId, forIndexPath: indexPath) 
         let lblCard:UILabel = cell.viewWithTag(100) as! UILabel
         lblCard.text = cards[indexPath.row]
         cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
@@ -107,7 +107,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     func shuffleCards(){
         for i in 0..<cards.count{
 //            var j = Int(arc4random_un())%cards.count
-            var j = Int(arc4random_uniform(UInt32(cards.count)))
+            let j = Int(arc4random_uniform(UInt32(cards.count)))
             let temp = cards[i]
             cards[i] = cards[j]
             cards[j] = temp
