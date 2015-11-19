@@ -54,7 +54,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
             cell!.backgroundColor = UIColor(red: 0, green: 255, blue: 0, alpha: 0.4)
             if didWin(){
                 btnRestart.enabled = true
-                var alert = UIAlertController(title: "Congratz!", message: "You won GG 👏🏼🎉", preferredStyle: UIAlertControllerStyle.Alert)
+                var alert = UIAlertController(title: "¡Felicidades!", message: "¡Has ganado! 👏🏼🎉", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
                 self.timer.invalidate()
