@@ -32,16 +32,19 @@ class SelectLevelViewController: UIViewController {
         case "segueLevel1":
             let destination = segue.destinationViewController as! loteria
             destination.selectedLevel = 1
-            print("level 1")
+            destination.gameMode = self.gameMode
+            print("level 1 \(destination.selectedLevel) \(destination.gameMode)")
         case "segueLevel2":
             let destination = segue.destinationViewController as! loteria
+            destination.gameMode = self.gameMode
             destination.selectedLevel = 2
-            print("level 2")
+            print("level 2 \(destination.selectedLevel) \(destination.gameMode)")
         case "segueLevel3":
             let destination = segue.destinationViewController as! loteria
+            destination.gameMode = self.gameMode
             destination.selectedLevel = 3
             destination.hideCurrentCard = true
-            print("level 3")
+            print("level 3 \(destination.selectedLevel) \(destination.gameMode)")
         case "segueInstructions":
             let destination = segue.destinationViewController 
             destination.title = "Instrucciones"

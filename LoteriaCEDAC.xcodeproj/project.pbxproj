@@ -30,6 +30,25 @@
 		9ECC60451BC8411500F8A70D /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC60441BC8411500F8A70D /* SelectLevelViewController.swift */; };
 		9ECC60471BC843A200F8A70D /* PlayModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC60461BC843A200F8A70D /* PlayModeViewController.swift */; };
 		9ECC60491BC8456E00F8A70D /* MultiplayerRoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC60481BC8456E00F8A70D /* MultiplayerRoleViewController.swift */; };
+		9EE5382D1C00F568008130EF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE5382C1C00F568008130EF /* AudioToolbox.framework */; };
+		9EE5382F1C00F5B9008130EF /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE5382E1C00F5B9008130EF /* MultipeerConnectivity.framework */; };
+		9EE5384D1C01044E008130EF /* sound.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE5384C1C01044E008130EF /* sound.png */; };
+		9EE5384F1C0106B5008130EF /* LeroyJenkins.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EE5384E1C0106B5008130EF /* LeroyJenkins.wav */; };
+		9EE5385C1C01261B008130EF /* burro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE538501C01261B008130EF /* burro.jpg */; };
+		9EE5385D1C01261B008130EF /* caballo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE538511C01261B008130EF /* caballo.jpg */; };
+		9EE5385E1C01261B008130EF /* cerdo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE538521C01261B008130EF /* cerdo.jpg */; };
+		9EE5385F1C01261B008130EF /* delfin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE538531C01261B008130EF /* delfin.jpg */; };
+		9EE538601C01261B008130EF /* elefante.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE538541C01261B008130EF /* elefante.jpg */; };
+		9EE538611C01261B008130EF /* foca.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE538551C01261B008130EF /* foca.jpg */; };
+		9EE538621C01261B008130EF /* gallo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE538561C01261B008130EF /* gallo.jpg */; };
+		9EE538631C01261B008130EF /* gato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE538571C01261B008130EF /* gato.jpg */; };
+		9EE538641C01261B008130EF /* oveja.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE538581C01261B008130EF /* oveja.jpg */; };
+		9EE538651C01261B008130EF /* pavo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE538591C01261B008130EF /* pavo.jpg */; };
+		9EE538661C01261B008130EF /* perro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE5385A1C01261B008130EF /* perro.jpg */; };
+		9EE538671C01261B008130EF /* pollo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE5385B1C01261B008130EF /* pollo.jpg */; };
+		9EE5386A1C01282A008130EF /* rana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE538681C01282A008130EF /* rana.jpg */; };
+		9EE5386B1C01282A008130EF /* vaca.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EE538691C01282A008130EF /* vaca.jpg */; };
+		9EE5386C1C012E6E008130EF /* loteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2C254F1B9E4B3B00F50E99 /* loteria.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +89,24 @@
 		9ECC60441BC8411500F8A70D /* SelectLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
 		9ECC60461BC843A200F8A70D /* PlayModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayModeViewController.swift; sourceTree = "<group>"; };
 		9ECC60481BC8456E00F8A70D /* MultiplayerRoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerRoleViewController.swift; sourceTree = "<group>"; };
+		9EE5382C1C00F568008130EF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9EE5382E1C00F5B9008130EF /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		9EE5384C1C01044E008130EF /* sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound.png; sourceTree = "<group>"; };
+		9EE5384E1C0106B5008130EF /* LeroyJenkins.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = LeroyJenkins.wav; sourceTree = "<group>"; };
+		9EE538501C01261B008130EF /* burro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = burro.jpg; sourceTree = "<group>"; };
+		9EE538511C01261B008130EF /* caballo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caballo.jpg; sourceTree = "<group>"; };
+		9EE538521C01261B008130EF /* cerdo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cerdo.jpg; sourceTree = "<group>"; };
+		9EE538531C01261B008130EF /* delfin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = delfin.jpg; sourceTree = "<group>"; };
+		9EE538541C01261B008130EF /* elefante.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = elefante.jpg; sourceTree = "<group>"; };
+		9EE538551C01261B008130EF /* foca.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foca.jpg; sourceTree = "<group>"; };
+		9EE538561C01261B008130EF /* gallo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gallo.jpg; sourceTree = "<group>"; };
+		9EE538571C01261B008130EF /* gato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gato.jpg; sourceTree = "<group>"; };
+		9EE538581C01261B008130EF /* oveja.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oveja.jpg; sourceTree = "<group>"; };
+		9EE538591C01261B008130EF /* pavo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pavo.jpg; sourceTree = "<group>"; };
+		9EE5385A1C01261B008130EF /* perro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = perro.jpg; sourceTree = "<group>"; };
+		9EE5385B1C01261B008130EF /* pollo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pollo.jpg; sourceTree = "<group>"; };
+		9EE538681C01282A008130EF /* rana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rana.jpg; sourceTree = "<group>"; };
+		9EE538691C01282A008130EF /* vaca.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vaca.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EE5382F1C00F5B9008130EF /* MultipeerConnectivity.framework in Frameworks */,
+				9EE5382D1C00F568008130EF /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +132,8 @@
 		9E2C253F1B9E4B3B00F50E99 = {
 			isa = PBXGroup;
 			children = (
+				9EE5382E1C00F5B9008130EF /* MultipeerConnectivity.framework */,
+				9EE5382C1C00F568008130EF /* AudioToolbox.framework */,
 				9E2C254A1B9E4B3B00F50E99 /* LoteriaCEDAC */,
 				9E2C25601B9E4B3B00F50E99 /* LoteriaCEDACTests */,
 				9E2C25491B9E4B3B00F50E99 /* Products */,
@@ -111,6 +152,21 @@
 		9E2C254A1B9E4B3B00F50E99 /* LoteriaCEDAC */ = {
 			isa = PBXGroup;
 			children = (
+				9EE538501C01261B008130EF /* burro.jpg */,
+				9EE538511C01261B008130EF /* caballo.jpg */,
+				9EE538521C01261B008130EF /* cerdo.jpg */,
+				9EE538531C01261B008130EF /* delfin.jpg */,
+				9EE538541C01261B008130EF /* elefante.jpg */,
+				9EE538551C01261B008130EF /* foca.jpg */,
+				9EE538561C01261B008130EF /* gallo.jpg */,
+				9EE538681C01282A008130EF /* rana.jpg */,
+				9EE538691C01282A008130EF /* vaca.jpg */,
+				9EE538571C01261B008130EF /* gato.jpg */,
+				9EE538581C01261B008130EF /* oveja.jpg */,
+				9EE538591C01261B008130EF /* pavo.jpg */,
+				9EE5385A1C01261B008130EF /* perro.jpg */,
+				9EE5385B1C01261B008130EF /* pollo.jpg */,
+				9EE5384C1C01044E008130EF /* sound.png */,
 				9E1223511BD562AA00E33110 /* Restart.png */,
 				9E12234D1BD5586500E33110 /* itesmLogo.png */,
 				9EC758671BD5442F007AD577 /* arrow.png */,
@@ -124,6 +180,7 @@
 				9EBDE3E71BCC6467005D8FD3 /* BotonNivel2.png */,
 				9EBDE3E81BCC6467005D8FD3 /* BotonNivel3.png */,
 				9EBDE3E91BCC6467005D8FD3 /* Fondo.png */,
+				9EE5384E1C0106B5008130EF /* LeroyJenkins.wav */,
 				9EBDE3EA1BCC6467005D8FD3 /* LogoLaLotería.png */,
 				9E2C254D1B9E4B3B00F50E99 /* AppDelegate.swift */,
 				9E2C254F1B9E4B3B00F50E99 /* loteria.swift */,
@@ -247,21 +304,37 @@
 			files = (
 				9EBDE3F01BCC6467005D8FD3 /* BotonJugar.png in Resources */,
 				9EBDE3F61BCC6467005D8FD3 /* LogoLaLotería.png in Resources */,
+				9EE538661C01261B008130EF /* perro.jpg in Resources */,
+				9EE5384D1C01044E008130EF /* sound.png in Resources */,
+				9EE538621C01261B008130EF /* gallo.jpg in Resources */,
+				9EE5385E1C01261B008130EF /* cerdo.jpg in Resources */,
 				9EBDE3F21BCC6467005D8FD3 /* BotonNivel1.png in Resources */,
 				9E12234E1BD5586500E33110 /* itesmLogo.png in Resources */,
+				9EE538611C01261B008130EF /* foca.jpg in Resources */,
 				9E1223521BD562AA00E33110 /* Restart.png in Resources */,
+				9EE5385C1C01261B008130EF /* burro.jpg in Resources */,
+				9EE538671C01261B008130EF /* pollo.jpg in Resources */,
+				9EE5385F1C01261B008130EF /* delfin.jpg in Resources */,
 				9EBDE3F51BCC6467005D8FD3 /* Fondo.png in Resources */,
 				9EBDE3ED1BCC6467005D8FD3 /* BotonAcerca.png in Resources */,
+				9EE538641C01261B008130EF /* oveja.jpg in Resources */,
 				9EBDE3F31BCC6467005D8FD3 /* BotonNivel2.png in Resources */,
 				9EC758681BD5442F007AD577 /* arrow.png in Resources */,
+				9EE5385D1C01261B008130EF /* caballo.jpg in Resources */,
 				9EBDE3F11BCC6467005D8FD3 /* BotonMultijug.png in Resources */,
 				9EBDE3EC1BCC6467005D8FD3 /* Boton1Jug.png in Resources */,
 				9E2C25531B9E4B3B00F50E99 /* Main.storyboard in Resources */,
 				9EBDE3EF1BCC6467005D8FD3 /* BotonInstrucciones.png in Resources */,
+				9EE5384F1C0106B5008130EF /* LeroyJenkins.wav in Resources */,
+				9EE538651C01261B008130EF /* pavo.jpg in Resources */,
+				9EE5386A1C01282A008130EF /* rana.jpg in Resources */,
 				9EBDE3F41BCC6467005D8FD3 /* BotonNivel3.png in Resources */,
+				9EE538631C01261B008130EF /* gato.jpg in Resources */,
 				9E2C25581B9E4B3B00F50E99 /* LaunchScreen.xib in Resources */,
 				9EBDE3EE1BCC6467005D8FD3 /* BotonDarLasCartas.png in Resources */,
 				9E2C25551B9E4B3B00F50E99 /* Images.xcassets in Resources */,
+				9EE5386B1C01282A008130EF /* vaca.jpg in Resources */,
+				9EE538601C01261B008130EF /* elefante.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EE5386C1C012E6E008130EF /* loteria.swift in Sources */,
 				9E2C25641B9E4B3B00F50E99 /* LoteriaCEDACTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -401,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -22,13 +22,18 @@ class MultiplayerRoleViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destination = segue.destinationViewController as! SelectLevelViewController
+        
         switch segue.identifier!{
         case "segueAsPlayer":
+            let destination = segue.destinationViewController as! SelectLevelViewController
             destination.gameMode = 1
             print("Player")
         case "segueAsDealer":
+            let destination = segue.destinationViewController as! SelectLevelViewController
             destination.gameMode = 2
+            print("Dealer")
+        case "returnPlayMode":
+            let destination = segue.destinationViewController as! PlayModeViewController
             print("Dealer")
         default:
             print("wutAs")
