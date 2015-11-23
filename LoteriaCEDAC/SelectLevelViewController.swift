@@ -43,7 +43,6 @@ class SelectLevelViewController: UIViewController {
             let destination = segue.destinationViewController as! loteria
             destination.gameMode = self.gameMode
             destination.selectedLevel = 3
-            destination.hideCurrentCard = true
             print("level 3 \(destination.selectedLevel) \(destination.gameMode)")
         case "segueInstructions":
             let destination = segue.destinationViewController 

@@ -38,9 +38,9 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     var selectedLevel = 0
     var gameMode = 0
     var hideCurrentCard = false
-    //var timer : NSTimer = NSTimer()
     var timerValue = 0
     var currentCardName = ""
+    var assosiation = [String: String]()
     
     //constants
     let cellId = "cardCell"
@@ -64,10 +64,11 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     
     //handle item select
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        //Animar cambio
         let cell = collectionView.cellForItemAtIndexPath(indexPath)
         let lblCell = cell?.viewWithTag(100) as! UIImageView
-        if self.gameMode == 2{//if im the dealer
+        
+        //if im the dealer
+        if self.gameMode == 2{
             self.collectionView.userInteractionEnabled = false
             cell!.alpha = 0.5
             cell!.userInteractionEnabled = false
@@ -80,46 +81,91 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
                 print("Error sending data")
             }
         }else{//if single player or not dealer
-            //check for match
-            if lblCell.image?.accessibilityIdentifier == self.currentCardName {
-                
-                if self.gameMode == 1 {//if player
-                    self.collectionView.userInteractionEnabled = false
-                    let peers = self.session.connectedPeers
-                    let data = lblCell.image?.accessibilityIdentifier?.dataUsingEncoding(NSUTF8StringEncoding)
-                    do{
-                        try self.session.sendData(data!, toPeers: peers, withMode: MCSessionSendDataMode.Reliable)
+            //level 3
+            if selectedLevel == 3{
+               let goal = assosiation[currentCardName]!
+                let selected = lblCell.image!.accessibilityIdentifier!
+                //did match
+                if selected == goal{
+                    //if player
+                    if self.gameMode == 1 {
+                        self.collectionView.userInteractionEnabled = false
+                        let peers = self.session.connectedPeers
+                        let data = lblCell.image?.accessibilityIdentifier?.dataUsingEncoding(NSUTF8StringEncoding)
+                        do{
+                            try self.session.sendData(data!, toPeers: peers, withMode: MCSessionSendDataMode.Reliable)
+                        }
+                        catch{
+                            print("Error sending data")
+                        }
                     }
-                    catch{
-                        print("Error sending data")
+                    
+                    selectedCards++
+                    cardsForDealing.removeAtIndex(cardsForDealing.indexOf(self.currentCardName)!)
+                    cell!.alpha = 0.5
+                    
+                    if (didWin()){
+                        btnRestart.enabled = true
+                        let alert = UIAlertController(title: "¡Felicidades!", message: "¡Has ganado! 👏🏼🎉", preferredStyle: UIAlertControllerStyle.Alert)
+                        alert.addAction(UIAlertAction(title: "Cerrar", style: UIAlertActionStyle.Default, handler: nil))
+                        self.presentViewController(alert, animated: true, completion: nil)
+                    }else{
+                        changeCurrentCard()
                     }
+                    
+                }else{
+                    UIView.animateWithDuration(0.2, animations: {
+                        cell!.alpha = 0.6
+                        }, completion: {
+                            (value:Bool) in
+                            cell!.alpha = 1
+                    })
                 }
                 
-                selectedCards++
-                
-                cardsForDealing.removeAtIndex(cardsForDealing.indexOf(self.currentCardName)!)
-                
-                cell!.alpha = 0.5
-                
-                if didWin(){
-                    btnRestart.enabled = true
-                    let alert = UIAlertController(title: "¡Felicidades!", message: "¡Has ganado! 👏🏼🎉", preferredStyle: UIAlertControllerStyle.Alert)
-                    alert.addAction(UIAlertAction(title: "Cerrar", style: UIAlertActionStyle.Default, handler: nil))
-                    self.presentViewController(alert, animated: true, completion: nil)
-                    //self.timer.invalidate()
-                    //self.timer = NSTimer()
-                }
-                if !didWin() {
-                    changeCurrentCard()
-                }
             }else{
-                UIView.animateWithDuration(0.2, animations: {
-                    cell!.alpha = 0.6
-                    }, completion: {
-                        (value:Bool) in
-                        cell!.alpha = 1
-                })
+                if lblCell.image?.accessibilityIdentifier == self.currentCardName {
+                    
+                    if self.gameMode == 1 {//if player
+                        self.collectionView.userInteractionEnabled = false
+                        let peers = self.session.connectedPeers
+                        let data = lblCell.image?.accessibilityIdentifier?.dataUsingEncoding(NSUTF8StringEncoding)
+                        do{
+                            try self.session.sendData(data!, toPeers: peers, withMode: MCSessionSendDataMode.Reliable)
+                        }
+                        catch{
+                            print("Error sending data")
+                        }
+                    }
+                    
+                    selectedCards++
+                    
+                    cardsForDealing.removeAtIndex(cardsForDealing.indexOf(self.currentCardName)!)
+                    
+                    cell!.alpha = 0.5
+                    
+                    if didWin(){
+                        btnRestart.enabled = true
+                        let alert = UIAlertController(title: "¡Felicidades!", message: "¡Has ganado! 👏🏼🎉", preferredStyle: UIAlertControllerStyle.Alert)
+                        alert.addAction(UIAlertAction(title: "Cerrar", style: UIAlertActionStyle.Default, handler: nil))
+                        self.presentViewController(alert, animated: true, completion: nil)
+                        //self.timer.invalidate()
+                        //self.timer = NSTimer()
+                    }
+                    if !didWin() {
+                        changeCurrentCard()
+                    }
+                }else{
+                    UIView.animateWithDuration(0.2, animations: {
+                        cell!.alpha = 0.6
+                        }, completion: {
+                            (value:Bool) in
+                            cell!.alpha = 1
+                    })
+                }
             }
+            
+            
+            
         }
     }
     
@@ -178,18 +224,22 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
         if !cardsForDealing.isEmpty{
             if self.gameMode == 0 { //if not multiplayer
                 self.currentCardName = cardsForDealing[Int(arc4random_uniform(UInt32(cardsForDealing.count)))]
+                
             }
             switch self.selectedLevel{
             case 1: currentCard.image = UIImage(named: self.currentCardName)
             case 2:
                 currentCard.image = UIImage(named: "sound.png")
                 currentCard.userInteractionEnabled = true
+            case 3:
+                currentCard.image = UIImage(named: self.currentCardName)
             default: print("")
             }
         }
     }
     
     private func configureSession() {
+        print("configuring session")
         // Create PeerID with the device's name.
         self.peerID = MCPeerID(displayName: "Simulator Number 4");
         // Create the session.
@@ -231,7 +281,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     func browserViewControllerWasCancelled(browserViewController: MCBrowserViewController) {
         self.browser.dismissViewControllerAnimated(true, completion: nil);
     }
-    // MARK: - Session Methods
+    /**** MARK: - Session Methods  ****/
     
     func session(session: MCSession, peer peerID: MCPeerID, didChangeState state: MCSessionState) {
         // Connects, Disconnects, and Cancels.
@@ -277,19 +327,42 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
         super.viewDidLoad()
         switch self.selectedLevel {
         case 1:
-            self.cards = ["burro.jpg", "caballo.jpg", "cerdo.jpg", "delfin.jpg", "elefante.jpg", "foca.jpg", "gallo.jpg", "gato.jpg", "oveja.jpg",  "pavo.jpg", "perro.jpg", "pollo.jpg", "rana.jpg", "vaca.jpg"]
-            self.cardsForDealing = ["burro.jpg", "caballo.jpg", "cerdo.jpg", "delfin.jpg", "elefante.jpg", "foca.jpg", "gallo.jpg", "gato.jpg", "oveja.jpg",  "pavo.jpg", "perro.jpg", "pollo.jpg", "rana.jpg", "vaca.jpg"]
+            self.cards = ["abeja.jpg", "burro.jpg", "cerdo.jpg", "elefante.jpg", "foca.jpg", "gallo.jpg", "gato.jpg","leon.jpg", "oveja.jpg",  "pavo.jpg", "perro.jpg", "pollo.jpg", "rana.jpg", "vaca.jpg"]
+            self.cardsForDealing = ["abeja.jpg", "burro.jpg", "cerdo.jpg", "elefante.jpg", "foca.jpg", "gallo.jpg", "gato.jpg","leon.jpg", "oveja.jpg",  "pavo.jpg", "perro.jpg", "pollo.jpg", "rana.jpg", "vaca.jpg"]
         case 2:
-            self.cards = ["burro.jpg", "caballo.jpg", "cerdo.jpg", "delfin.jpg", "elefante.jpg", "foca.jpg", "gallo.jpg", "gato.jpg", "oveja.jpg",  "pavo.jpg", "perro.jpg", "pollo.jpg", "rana.jpg", "vaca.jpg"]
-            self.cardsForDealing = ["burro.jpg", "caballo.jpg", "cerdo.jpg", "delfin.jpg", "elefante.jpg", "foca.jpg", "gallo.jpg", "gato.jpg", "oveja.jpg",  "pavo.jpg", "perro.jpg", "pollo.jpg", "rana.jpg", "vaca.jpg"]
+            self.cards = ["abeja.jpg", "burro.jpg", "cerdo.jpg", "elefante.jpg", "foca.jpg", "gallo.jpg", "gato.jpg","leon.jpg", "oveja.jpg",  "pavo.jpg", "perro.jpg", "pollo.jpg", "rana.jpg", "vaca.jpg"]
+            self.cardsForDealing = ["abeja.jpg", "burro.jpg", "cerdo.jpg", "elefante.jpg", "foca.jpg", "gallo.jpg", "gato.jpg","leon.jpg", "oveja.jpg",  "pavo.jpg", "perro.jpg", "pollo.jpg", "rana.jpg", "vaca.jpg"]
         case 3:
-            self.cards = ["burro.jpg", "caballo.jpg", "cerdo.jpg", "delfin.jpg", "elefante.jpg", "foca.jpg", "gallo.jpg", "gato.jpg", "oveja.jpg",  "pavo.jpg", "perro.jpg", "pollo.jpg", "rana.jpg", "vaca.jpg"]
-            self.cardsForDealing = ["burro.jpg", "caballo.jpg", "cerdo.jpg", "delfin.jpg", "elefante.jpg", "foca.jpg", "gallo.jpg", "gato.jpg", "oveja.jpg",  "pavo.jpg", "perro.jpg", "pollo.jpg", "rana.jpg", "vaca.jpg"]
+            self.cards = ["astronauta2.png","atletismo2.png","basquetbol2.png","bombero2.png","carpintero2.png","chef2.png","fotografo2.png",
+                "futbolista2.png","nadador2.png","jinete2.png","panadero2.png","policia2.png","profesor2.png", "tenista2.png"]
+            self.cardsForDealing = ["astronauta1.png","atletismo1.png","basquetbol1.png","bombero1.png", "carpintero1.png", "chef1.png","fotografo1.png","futbolista1.png", "nadador1.png", "jinete1.png", "panadero1.png", "policia1.png","profesor1.png" , "tenista1.png"]
+           
+            assosiation =
+                [
+                "astronauta1.png"   :  "astronauta2.png",
+                "atletismo1.png"    :   "atletismo2.png",
+                "basquetbol1.png"   :  "basquetbol2.png",
+                "bombero1.png"      :     "bombero2.png",
+                "carpintero1.png"   :   "carpintero2.png",
+                "chef1.png"         :        "chef2.png",
+                "fotografo1.png"    :   "fotografo2.png",
+                "futbolista1.png"   :  "futbolista2.png",
+                "nadador1.png"      :     "nadador2.png",
+                "jinete1.png"       :      "jinete2.png",
+                "panadero1.png"     :    "panadero2.png",
+                "policia1.png"      :     "policia2.png",
+                "profesor1.png"     :    "profesor2.png",
+                "tenista1.png"      :     "tenista2.png"
+                ]
+            
         default:
             print("")
         }
         if(self.gameMode != 0 ){ //if multiplayer
-            self.configureSession();
+            
+            /*UNCOMMENT!!!!*/
+            
+            //self.configureSession();
             print("Configuring session")
         }
         
@@ -303,12 +376,10 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
         currentCard.hidden = hideCurrentCard
         changeCurrentCard()
         shuffleCards()
-        //timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "changeCurrentCard", userInfo: nil, repeats: true)
         btnRestart.enabled = false
     }
     
-    // Unused Methods
-    
+    /***** Unused Methods ****/
     func session(session: MCSession, didReceiveStream stream: NSInputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
         return ;
     }
