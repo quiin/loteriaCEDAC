@@ -50,6 +50,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     @IBOutlet weak var cvCards: UICollectionView!
     @IBOutlet weak var btnRestart: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var selectCardLabel: UILabel!
     
     //Collection methods
     //items in section
@@ -87,6 +88,9 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
                 let selected = lblCell.image!.accessibilityIdentifier!
                 //did match
                 if selected == goal{
+                    
+                    cell?.userInteractionEnabled = false
+                    
                     //if player
                     if self.gameMode == 1 {
                         self.collectionView.userInteractionEnabled = false
@@ -124,6 +128,8 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
                 
             }else{
                 if lblCell.image?.accessibilityIdentifier == self.currentCardName {
+                    
+                    cell?.userInteractionEnabled = false
                     
                     if self.gameMode == 1 {//if player
                         self.collectionView.userInteractionEnabled = false
@@ -317,8 +323,10 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
                 self.collectionView.userInteractionEnabled = true
             }else if self.gameMode == 2 {//if dealer
                 self.counterCompletedDevices++
+                self.selectCardLabel.text = "Jugadores que acertaron: \(self.counterCompletedDevices)"
                 if(self.counterCompletedDevices == self.deviceArray.count){
                     //All connected devices have guessed the card
+                    self.selectCardLabel.text = "Selecciona una carta:"
                     self.counterCompletedDevices = 0
                     self.collectionView.userInteractionEnabled = true
                 }
@@ -374,6 +382,10 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
         if self.gameMode == 1{ //if player
             self.collectionView.userInteractionEnabled = false
         }
+        
+        if self.gameMode == 2{
+            selectCardLabel.hidden = false
+        }
        
         self.title = "Nivel \(selectedLevel)"
         print("game mode \(self.gameMode)")
@@ -397,17 +409,14 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
         return ;
     }
     
-    /*override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        switch segue.identifier!{
-        case "returnLevelSelect":
-            let destination = segue.destinationViewController as! SelectLevelViewController
-            destination.gameMode = self.gameMode
-            //destination.gameMode = self.gameMode
-            //print("level 1 \(destination.selectedLevel) \(destination.gameMode)")
-        default:
-            print("wut")
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if self.gameMode != 0{
+           disconnect() 
         }
-    }*/
+        let destination = segue.destinationViewController as!SelectLevelViewController
+        destination.gameMode = self.gameMode
+        
+    }
 
     
     override func didReceiveMemoryWarning() {

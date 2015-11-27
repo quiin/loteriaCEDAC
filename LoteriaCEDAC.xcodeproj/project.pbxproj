@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3CA7D7911C08BF55006C28E9 /* tec.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CA7D7901C08BF55006C28E9 /* tec.jpg */; };
+		3CA7D7921C08E14C006C28E9 /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC60441BC8411500F8A70D /* SelectLevelViewController.swift */; };
 		9E12234E1BD5586500E33110 /* itesmLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E12234D1BD5586500E33110 /* itesmLogo.png */; };
 		9E1223521BD562AA00E33110 /* Restart.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E1223511BD562AA00E33110 /* Restart.png */; };
 		9E2C254E1B9E4B3B00F50E99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2C254D1B9E4B3B00F50E99 /* AppDelegate.swift */; };
@@ -539,6 +540,7 @@
 			files = (
 				9EE5386C1C012E6E008130EF /* loteria.swift in Sources */,
 				9E2C25641B9E4B3B00F50E99 /* LoteriaCEDACTests.swift in Sources */,
+				3CA7D7921C08E14C006C28E9 /* SelectLevelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
