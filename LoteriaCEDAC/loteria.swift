@@ -224,7 +224,6 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
         if !cardsForDealing.isEmpty{
             if self.gameMode == 0 { //if not multiplayer
                 self.currentCardName = cardsForDealing[Int(arc4random_uniform(UInt32(cardsForDealing.count)))]
-                
             }
             switch self.selectedLevel{
             case 1: currentCard.image = UIImage(named: self.currentCardName)
@@ -241,24 +240,26 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     private func configureSession() {
         print("configuring session")
         // Create PeerID with the device's name.
-        self.peerID = MCPeerID(displayName: "Simulator Number 4");
+        self.peerID = MCPeerID(displayName: UIDevice.currentDevice().name);
         // Create the session.
         self.session = MCSession(peer: self.peerID);
         self.session.delegate = self;
         // Create announcer.
-        self.announcer = MCAdvertiserAssistant(serviceType: "Loteria CEDAC", discoveryInfo: nil, session: self.session);
+        self.announcer = MCAdvertiserAssistant(serviceType: "LoteriaCEDAC", discoveryInfo: nil, session: self.session);
         self.announcer.start();
     }
     
     // MARK: - Event Handler Methods
     
-    @IBAction func connect(sender: UIButton) {
-        self.browser = MCBrowserViewController(serviceType: "Loteria CEDAC", session: self.session);
+    func connect() {
+        print("Connecting")
+        self.browser = MCBrowserViewController(serviceType: "LoteriaCEDAC", session: self.session);
         self.browser.delegate = self;
         self.presentViewController(self.browser, animated: true, completion: nil);
     }
     
-    @IBAction func disconnect(sender: UIButton) {
+    func disconnect() {
+        print("Disconnecting")
         // Stops broadcasting data.
         self.announcer.stop();
         self.announcer.delegate = nil;
@@ -269,7 +270,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
         
         self.deviceArray.removeAllObjects();
         // Restarts the app.
-        self.configureSession();
+        //self.configureSession();
     }
     
     // MARK: - Browser Methods
@@ -279,7 +280,9 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     }
     
     func browserViewControllerWasCancelled(browserViewController: MCBrowserViewController) {
+        disconnect()
         self.browser.dismissViewControllerAnimated(true, completion: nil);
+        performSegueWithIdentifier("returnLevelSelect", sender: self)
     }
     /**** MARK: - Session Methods  ****/
     
@@ -316,6 +319,7 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
                 self.counterCompletedDevices++
                 if(self.counterCompletedDevices == self.deviceArray.count){
                     //All connected devices have guessed the card
+                    self.counterCompletedDevices = 0
                     self.collectionView.userInteractionEnabled = true
                 }
             }
@@ -362,7 +366,8 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
             
             /*UNCOMMENT!!!!*/
             
-            //self.configureSession();
+            self.configureSession();
+            self.connect()
             print("Configuring session")
         }
         
@@ -391,6 +396,18 @@ class loteria: UIViewController, UICollectionViewDelegate,UICollectionViewDataSo
     func session(session: MCSession, didFinishReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, atURL localURL: NSURL, withError error: NSError?) {
         return ;
     }
+    
+    /*override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        switch segue.identifier!{
+        case "returnLevelSelect":
+            let destination = segue.destinationViewController as! SelectLevelViewController
+            destination.gameMode = self.gameMode
+            //destination.gameMode = self.gameMode
+            //print("level 1 \(destination.selectedLevel) \(destination.gameMode)")
+        default:
+            print("wut")
+        }
+    }*/
 
     
     override func didReceiveMemoryWarning() {

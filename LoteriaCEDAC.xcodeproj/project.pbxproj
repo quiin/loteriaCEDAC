@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CA7D7911C08BF55006C28E9 /* tec.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CA7D7901C08BF55006C28E9 /* tec.jpg */; };
 		9E12234E1BD5586500E33110 /* itesmLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E12234D1BD5586500E33110 /* itesmLogo.png */; };
 		9E1223521BD562AA00E33110 /* Restart.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E1223511BD562AA00E33110 /* Restart.png */; };
 		9E2C254E1B9E4B3B00F50E99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2C254D1B9E4B3B00F50E99 /* AppDelegate.swift */; };
@@ -104,12 +105,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3CA7D7901C08BF55006C28E9 /* tec.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tec.jpg; sourceTree = "<group>"; };
 		9E12234D1BD5586500E33110 /* itesmLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = itesmLogo.png; path = Images/itesmLogo.png; sourceTree = "<group>"; };
 		9E1223511BD562AA00E33110 /* Restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Restart.png; path = Images/Restart.png; sourceTree = "<group>"; };
 		9E2C25481B9E4B3B00F50E99 /* LoteriaCEDAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoteriaCEDAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2C254C1B9E4B3B00F50E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E2C254D1B9E4B3B00F50E99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E2C254F1B9E4B3B00F50E99 /* loteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loteria.swift; sourceTree = "<group>"; };
+		9E2C254F1B9E4B3B00F50E99 /* loteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loteria.swift; path = LoteriaCEDAC/loteria.swift; sourceTree = SOURCE_ROOT; };
 		9E2C25521B9E4B3B00F50E99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E2C25541B9E4B3B00F50E99 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9E2C25571B9E4B3B00F50E99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -172,7 +174,7 @@
 		9EBDE3E91BCC6467005D8FD3 /* Fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fondo.png; path = Images/Fondo.png; sourceTree = "<group>"; };
 		9EBDE3EA1BCC6467005D8FD3 /* LogoLaLotería.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LogoLaLotería.png"; path = "Images/LogoLaLotería.png"; sourceTree = "<group>"; };
 		9EC758671BD5442F007AD577 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = Images/arrow.png; sourceTree = "<group>"; };
-		9ECC60441BC8411500F8A70D /* SelectLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
+		9ECC60441BC8411500F8A70D /* SelectLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectLevelViewController.swift; path = LoteriaCEDAC/SelectLevelViewController.swift; sourceTree = SOURCE_ROOT; };
 		9ECC60461BC843A200F8A70D /* PlayModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayModeViewController.swift; sourceTree = "<group>"; };
 		9ECC60481BC8456E00F8A70D /* MultiplayerRoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerRoleViewController.swift; sourceTree = "<group>"; };
 		9EE5382C1C00F568008130EF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -306,6 +308,7 @@
 				9EBDE3E71BCC6467005D8FD3 /* BotonNivel2.png */,
 				9EBDE3E81BCC6467005D8FD3 /* BotonNivel3.png */,
 				9EBDE3E91BCC6467005D8FD3 /* Fondo.png */,
+				3CA7D7901C08BF55006C28E9 /* tec.jpg */,
 				9EE5384E1C0106B5008130EF /* LeroyJenkins */,
 				9EBDE3EA1BCC6467005D8FD3 /* LogoLaLotería.png */,
 				9E2C254D1B9E4B3B00F50E99 /* AppDelegate.swift */,
@@ -397,6 +400,7 @@
 				TargetAttributes = {
 					9E2C25471B9E4B3B00F50E99 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = XQA93MJMUQ;
 					};
 					9E2C255C1B9E4B3B00F50E99 = {
 						CreatedOnToolsVersion = 6.4;
@@ -490,6 +494,7 @@
 				9E99BEB71C03AB9300D49F1A /* perro.wav in Resources */,
 				9EA3E8B01C03B70B00551454 /* profesor1.png in Resources */,
 				9EA3E8AB1C03B70B00551454 /* nadador2.png in Resources */,
+				3CA7D7911C08BF55006C28E9 /* tec.jpg in Resources */,
 				9E2C25581B9E4B3B00F50E99 /* LaunchScreen.xib in Resources */,
 				9E99BEB91C03AB9300D49F1A /* rana.wav in Resources */,
 				9E99BEBA1C03AB9300D49F1A /* vaca.wav in Resources */,
@@ -655,10 +660,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LoteriaCEDAC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mx.rmr.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -666,10 +674,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LoteriaCEDAC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mx.rmr.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
