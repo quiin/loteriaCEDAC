@@ -20,24 +20,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fbv-bG-gjj">
                                 <rect key="frame" x="4" y="0.0" width="597" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIs-xa-Ai5">
-                                <rect key="frame" x="154" y="238" width="293" height="93"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdV-W2-CPu">
+                                <rect key="frame" x="154" y="433" width="293" height="139"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="93" id="Euu-ML-Pp8"/>
-                                    <constraint firstAttribute="width" constant="293" id="lYM-XO-yB2"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="BotonJugar.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Hyg-6S-dEv" kind="show" id="HtC-Jp-xNl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdV-W2-CPu">
-                                <rect key="frame" x="154" y="385" width="282" height="93"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="282" id="7XM-Mf-56h"/>
-                                    <constraint firstAttribute="height" constant="93" id="YQZ-lx-Nmf"/>
+                                    <constraint firstAttribute="width" constant="293" id="AvF-Uz-CGu"/>
+                                    <constraint firstAttribute="height" constant="139" id="xOL-W5-4Xq"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="BotonAcerca.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,22 +33,35 @@
                                     <segue destination="d94-zA-mSI" kind="show" id="zk4-LL-KFi"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LogoLaLotería.png" translatesAutoresizingMaskIntoConstraints="NO" id="jVC-VD-NZ7">
-                                <rect key="frame" x="143" y="28" width="314" height="141"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoLaLotería.png" translatesAutoresizingMaskIntoConstraints="NO" id="jVC-VD-NZ7">
+                                <rect key="frame" x="127" y="28" width="347" height="184"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIs-xa-Ai5">
+                                <rect key="frame" x="154" y="244" width="293" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="Izv-Dv-W4M"/>
+                                    <constraint firstAttribute="width" constant="293" id="r3I-Kh-6iv"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="BotonJugar.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Hyg-6S-dEv" kind="show" id="HtC-Jp-xNl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fbv-bG-gjj" secondAttribute="bottom" id="6vP-2M-UzU"/>
+                            <constraint firstItem="WIs-xa-Ai5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A3k-Sh-ZAX"/>
                             <constraint firstItem="jVC-VD-NZ7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ACQ-cP-AXf"/>
                             <constraint firstItem="Fbv-bG-gjj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="K1m-Rs-12N"/>
                             <constraint firstItem="Fbv-bG-gjj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="MuI-He-ezq"/>
+                            <constraint firstItem="cdV-W2-CPu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WsE-o5-i5p"/>
+                            <constraint firstItem="WIs-xa-Ai5" firstAttribute="top" secondItem="jVC-VD-NZ7" secondAttribute="bottom" constant="32" id="WwV-Ph-Vvb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fbv-bG-gjj" secondAttribute="trailing" constant="-21" id="dGK-rG-rwP"/>
-                            <constraint firstItem="cdV-W2-CPu" firstAttribute="top" secondItem="WIs-xa-Ai5" secondAttribute="bottom" constant="54" id="guj-IL-mGP"/>
-                            <constraint firstItem="WIs-xa-Ai5" firstAttribute="top" secondItem="jVC-VD-NZ7" secondAttribute="bottom" constant="69" id="iCB-yh-1yd"/>
-                            <constraint firstItem="cdV-W2-CPu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="spp-hH-1FF"/>
+                            <constraint firstItem="cdV-W2-CPu" firstAttribute="top" secondItem="WIs-xa-Ai5" secondAttribute="bottom" constant="50" id="iy0-gJ-Xb1"/>
                             <constraint firstItem="jVC-VD-NZ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xLp-3t-rCl"/>
-                            <constraint firstItem="WIs-xa-Ai5" firstAttribute="centerX" secondItem="jVC-VD-NZ7" secondAttribute="centerX" id="xQ9-RZ-EDd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lotería CEDAC" id="wpk-Uk-sl3"/>
@@ -85,8 +85,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="aTZ-tu-1Qs">
                                 <rect key="frame" x="4" y="0.0" width="592" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1h-IK-O7H">
-                                <rect key="frame" x="157" y="194" width="286" height="82"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1h-IK-O7H">
+                                <rect key="frame" x="85" y="237" width="430" height="109"/>
                                 <state key="normal" backgroundImage="Boton1Jug.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -94,8 +94,8 @@
                                     <segue destination="O5u-xs-TRh" kind="show" identifier="segueSinglePlayer" id="teC-gM-skb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-E2-w7C">
-                                <rect key="frame" x="157" y="307" width="278" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-E2-w7C">
+                                <rect key="frame" x="30" y="377" width="540" height="112"/>
                                 <state key="normal" backgroundImage="BotonMultijug.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -103,8 +103,8 @@
                                     <segue destination="VqI-EY-uia" kind="show" identifier="segueMultiPlayer" id="L3c-ra-MYs"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LogoLaLotería.png" translatesAutoresizingMaskIntoConstraints="NO" id="N1X-Lc-vv2">
-                                <rect key="frame" x="143" y="28" width="314" height="141"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoLaLotería.png" translatesAutoresizingMaskIntoConstraints="NO" id="N1X-Lc-vv2">
+                                <rect key="frame" x="127" y="28" width="347" height="184"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkM-E0-GCT">
                                 <rect key="frame" x="467" y="451" width="90" height="86"/>
@@ -257,7 +257,11 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVl-1a-asx">
                                 <rect key="frame" x="137" y="189" width="327" height="100"/>
-                                <state key="normal" backgroundImage="BotonJugar.png">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="327" id="0bf-HB-AsV"/>
+                                    <constraint firstAttribute="height" constant="100" id="cgA-eU-1Wm"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="BotonJugar2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -462,7 +466,7 @@
                                     <outletCollection property="gestureRecognizers" destination="ykL-Je-rLy" appends="YES" id="bWH-vX-5t9"/>
                                 </connections>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="s5h-LT-pVR">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="s5h-LT-pVR">
                                 <rect key="frame" x="30" y="193" width="540" height="303"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GgF-zq-b3t">
@@ -500,10 +504,10 @@
                                     <outlet property="delegate" destination="9yM-Ef-QHD" id="Y0r-PG-FAL"/>
                                 </connections>
                             </collectionView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Selecciona una carta:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2t-rh-6cg">
-                                <rect key="frame" x="137" y="85" width="326" height="44"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona una carta:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2t-rh-6cg">
+                                <rect key="frame" x="158" y="85" width="285" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -513,6 +517,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="GSN-fT-x29" secondAttribute="trailing" constant="-20" id="JTZ-FH-eDp"/>
                             <constraint firstItem="wZH-Ud-zzm" firstAttribute="centerX" secondItem="S9U-pp-eAe" secondAttribute="centerX" id="Jg7-Cj-zkf"/>
                             <constraint firstItem="wZH-Ud-zzm" firstAttribute="top" secondItem="FAv-XD-UVk" secondAttribute="bottom" constant="8" id="LYl-u1-b8T"/>
+                            <constraint firstItem="8aa-Us-8vS" firstAttribute="top" secondItem="s5h-LT-pVR" secondAttribute="bottom" constant="104" id="Qyq-6n-6fm"/>
                             <constraint firstItem="s5h-LT-pVR" firstAttribute="top" secondItem="wZH-Ud-zzm" secondAttribute="bottom" constant="8" id="SiA-Au-3t1"/>
                             <constraint firstAttribute="leadingMargin" secondItem="s5h-LT-pVR" secondAttribute="leading" constant="-10" id="Vgl-Vu-M7p"/>
                             <constraint firstItem="K2t-rh-6cg" firstAttribute="centerX" secondItem="wZH-Ud-zzm" secondAttribute="centerX" id="VmL-WB-jfP"/>
@@ -648,10 +653,11 @@
     </scenes>
     <resources>
         <image name="Boton1Jug.png" width="430" height="109"/>
-        <image name="BotonAcerca.png" width="486" height="110"/>
+        <image name="BotonAcerca.png" width="820" height="569"/>
         <image name="BotonDarLasCartas.png" width="638" height="107"/>
         <image name="BotonInstrucciones.png" width="540" height="112"/>
-        <image name="BotonJugar.png" width="366" height="112"/>
+        <image name="BotonJugar.png" width="789" height="505"/>
+        <image name="BotonJugar2.png" width="366" height="112"/>
         <image name="BotonMultijug.png" width="540" height="112"/>
         <image name="BotonNivel1.png" width="362" height="112"/>
         <image name="BotonNivel2.png" width="362" height="112"/>
@@ -663,9 +669,9 @@
         <image name="tec.jpg" width="450" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gh6-OC-rhN"/>
-        <segue reference="Rpj-Ak-kjJ"/>
-        <segue reference="kEM-OX-MaZ"/>
+        <segue reference="oKq-ED-rFf"/>
+        <segue reference="yt1-iJ-Sd5"/>
         <segue reference="5f1-JT-2gA"/>
+        <segue reference="gh6-OC-rhN"/>
     </inferredMetricsTieBreakers>
 </document>

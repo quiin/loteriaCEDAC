@@ -17,6 +17,7 @@
 		9E2C25551B9E4B3B00F50E99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E2C25541B9E4B3B00F50E99 /* Images.xcassets */; };
 		9E2C25581B9E4B3B00F50E99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E2C25561B9E4B3B00F50E99 /* LaunchScreen.xib */; };
 		9E2C25641B9E4B3B00F50E99 /* LoteriaCEDACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2C25631B9E4B3B00F50E99 /* LoteriaCEDACTests.swift */; };
+		9E8950201C0CFB4F0016F163 /* BotonJugar2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E89501F1C0CFB4F0016F163 /* BotonJugar2.png */; };
 		9E99BE9D1C03AB4200D49F1A /* abeja.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9E99BE9B1C03AB4200D49F1A /* abeja.jpg */; };
 		9E99BE9E1C03AB4200D49F1A /* leon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9E99BE9C1C03AB4200D49F1A /* leon.jpg */; };
 		9E99BEAD1C03AB9300D49F1A /* abeja.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9E99BE9F1C03AB9300D49F1A /* abeja.wav */; };
@@ -119,6 +120,7 @@
 		9E2C255D1B9E4B3B00F50E99 /* LoteriaCEDACTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoteriaCEDACTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2C25621B9E4B3B00F50E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E2C25631B9E4B3B00F50E99 /* LoteriaCEDACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoteriaCEDACTests.swift; sourceTree = "<group>"; };
+		9E89501F1C0CFB4F0016F163 /* BotonJugar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotonJugar2.png; path = Images/BotonJugar2.png; sourceTree = "<group>"; };
 		9E99BE9B1C03AB4200D49F1A /* abeja.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abeja.jpg; sourceTree = "<group>"; };
 		9E99BE9C1C03AB4200D49F1A /* leon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leon.jpg; sourceTree = "<group>"; };
 		9E99BE9F1C03AB9300D49F1A /* abeja.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = abeja.wav; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 				9EBDE3E21BCC6467005D8FD3 /* BotonDarLasCartas.png */,
 				9EBDE3E31BCC6467005D8FD3 /* BotonInstrucciones.png */,
 				9EBDE3E41BCC6467005D8FD3 /* BotonJugar.png */,
+				9E89501F1C0CFB4F0016F163 /* BotonJugar2.png */,
 				9EBDE3E51BCC6467005D8FD3 /* BotonMultijug.png */,
 				9EBDE3E61BCC6467005D8FD3 /* BotonNivel1.png */,
 				9EBDE3E71BCC6467005D8FD3 /* BotonNivel2.png */,
@@ -439,6 +442,7 @@
 				9E99BE9E1C03AB4200D49F1A /* leon.jpg in Resources */,
 				9EBDE3F61BCC6467005D8FD3 /* LogoLaLotería.png in Resources */,
 				9EA3E8991C03B70B00551454 /* astronauta2.png in Resources */,
+				9E8950201C0CFB4F0016F163 /* BotonJugar2.png in Resources */,
 				9EA3E8A31C03B70B00551454 /* chef2.png in Resources */,
 				9EE538661C01261B008130EF /* perro.jpg in Resources */,
 				9EA3E8A61C03B70B00551454 /* futbolista1.png in Resources */,
